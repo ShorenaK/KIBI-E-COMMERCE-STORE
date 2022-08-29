@@ -6,14 +6,14 @@ const methodOverride = require('method-override');
 const productsController = require('./controllers/products_controller')
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
 app.use('/products', productsController)
-
-
-
+app.set('view engine','ejs');
 
 
 app.get('/',(req, res)=>{
-  res.send('<h1>Server is up and Running</h1>')
+  res.render('index')
 })
 
 
