@@ -10,6 +10,13 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <script src="" async defer></script>
+        <section><%- include( 'partials/nav.ejs' )  %></section>
+            <div>
+                <h2 class="title"><%=product.name%>
+                </h2>
+            </div>
+        </div>
+        <img src="<%=product.image%>" style="max-width: 500px;"/>
+    </div>
     </body>
 </html>
