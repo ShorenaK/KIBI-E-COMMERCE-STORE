@@ -17,7 +17,6 @@ router.get('/:id', async (req,res) => {
 });
 
 router.post('/new', async (req,res) => {
-//   console.log(req.body)
   const newProduct = req.body;
   await Product.create({
     name: newProduct.name,
