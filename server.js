@@ -14,7 +14,9 @@ app.get('/',(req, res)=>{
   res.render('home.ejs')
 })
 
-
+app.get('/*', (req, res) => {
+  res.render('404.ejs')
+})
 
 app.listen(PORT, ()=>{
     console.log(`Server up at http://localhost:${PORT}`)
