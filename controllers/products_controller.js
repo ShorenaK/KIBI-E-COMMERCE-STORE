@@ -7,13 +7,18 @@ const seedProduct = require('../models/seed_products');
 const Product = require('../models/Product')
 
 router.get('/', async (req,res) => {
-  const context = await Product.find({})
-  res.render('index.ejs', {keyboards: context})
-})
+  const context = await Product.find({});
+  res.render('index.ejs', {keyboards: context});
+});
 
 router.get('/:id', async (req,res) => {
-    const context = await Product.findById(req.params.id)
-    res.render('show.ejs', {keyboard: context})
+  const context = await Product.findById(req.params.id);
+  res.render('show.ejs', {keyboard: context});
+});
+
+router.post('/new', async (req,res) => {
+    const productToUpdate = req.body;
+    
 })
 
 module.exports = router;
