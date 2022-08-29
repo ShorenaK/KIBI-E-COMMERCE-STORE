@@ -1,5 +1,5 @@
 module.exports =[{
-    name: 'fake', 
+    name: '', 
     price: 00, 
     image: '',
     id: 0
