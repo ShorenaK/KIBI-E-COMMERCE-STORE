@@ -24,7 +24,7 @@ router.get('/keyboards', async (req,res) => {
 router.get('/keyboards/:id/edit', async (req,res) => {
   const context = await Product.findById(req.params.id);
   res.render('edit.ejs', {keyboard: context})
-})
+});
 
 router.get('/keyboards/:id', async (req,res) => {
   const context = await Product.findById(req.params.id);
