@@ -9,6 +9,15 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        <h1>Edit product</h1>
+        <p><%= keycap !== null ? keycap.name : keyboard.name %> </p>
         <script src="" async defer></script>
+        <% if (keycap !== null) {%>
+            <form action="/products/keycaps/<%= keycap._id %>/edit?_method=DELETE" method="POST"%>
+        <% } else { %>
+            <form action="/products/keyboards/<%= keyboard._id %>/edit?_method=DELETE" method="POST"%></form>
+        <% } %>>
+        <input type="submit" value="Delete"></input>
+        </form>
     </body>
 </html>

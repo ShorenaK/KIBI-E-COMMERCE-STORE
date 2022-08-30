@@ -21,10 +21,11 @@ router.get('/keyboards', async (req,res) => {
   res.render('keyboards.ejs', {keyboards: context});
 });
 
-router.get('/keyboards/:id/edit', async (req,res) => {
-  const context = await Product.findById(req.params.id);
-  res.render('edit.ejs', {keyboard: context})
-});
+// deprecated by combined edit route
+// router.get('/keyboards/:id/edit', async (req,res) => {
+//   const context = await Product.findById(req.params.id);
+//   res.render('edit.ejs', {keyboard: context})
+// });
 
 // assumes edit page will have an update button using PUT through method override
 router.put('/keyboards/:id/edit', async (req,res) => {
@@ -60,11 +61,6 @@ router.get('/keycaps', async (req,res) => {
   res.render('keycaps.ejs', {keycaps: context})
 });
 
-router.get('/keycaps/:id/edit', async (req,res) => {
-  const context = await Keycap.findById(req.params.id);
-  res.render('edit.ejs', {keycap: context})
-});
-
 // assumes edit page will have an update button using PUT through method override
 router.put('/keycaps/:id/edit', async (req,res) => {
   await Keycap.updateOne({_id: req.params.id},{
@@ -95,23 +91,23 @@ router.post('/keycaps/:id', async (req,res) => {
 
 // deprecated
 // router.get('/:id', async (req,res) => {
-//   const keyboardToShow = await Product.findById(req.params.id, (err,result) => {
-//     if (err) {
-//       console.log("No keyboard found at this id");
-//       return null;
-//     }
-//     return result;
-//   });
-//   const keycapToShow = await Keycap.findById(req.params.id, (err,result) => {
-//     if (err) {
-//       console.log("No keycap found at this id");
-//       return null;
-//     }
-//     return result;
-//   });
-//   res.render('show.ejs', {keyboard: keyboardToShow, keycap: keycapToShow});
-// });
-
+  //   const keyboardToShow = await Product.findById(req.params.id, (err,result) => {
+    //     if (err) {
+      //       console.log("No keyboard found at this id");
+      //       return null;
+      //     }
+      //     return result;
+      //   });
+      //   const keycapToShow = await Keycap.findById(req.params.id, (err,result) => {
+        //     if (err) {
+          //       console.log("No keycap found at this id");
+          //       return null;
+          //     }
+          //     return result;
+          //   });
+          //   res.render('show.ejs', {keyboard: keyboardToShow, keycap: keycapToShow});
+          // });
+          
 // assumes form will include a way to select type: keyboard or keycap
 router.post('/new', async (req,res) => {
   const newProduct = req.body;
@@ -132,6 +128,12 @@ router.post('/new', async (req,res) => {
     });
   };
   res.redirect('/');
+});
+
+router.get('/:id/edit', async (req,res) => {
+  const keycap = await Keycap.findById(req.params.id).exec()
+  const keyboard = await Product.findById(req.params.id).exec()
+  res.render('edit.ejs', {keycap: keycap, keyboard: keyboard});
 });
 
 module.exports = {router: router, cart: cart};
