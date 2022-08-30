@@ -112,14 +112,25 @@ router.post('/keycaps/:id', async (req,res) => {
 //   res.render('show.ejs', {keyboard: keyboardToShow, keycap: keycapToShow});
 // });
 
+// assumes form will include a way to select type: keyboard or keycap
 router.post('/new', async (req,res) => {
   const newProduct = req.body;
-  await Product.create({
-    name: newProduct.name,
-    price: newProduct.price,
-    image: newProduct.image,
-    description: newProduct.description,
-  });
+  if (req.body.type === "keyboard") {
+    await Product.create({
+      name: newProduct.name,
+      price: newProduct.price,
+      image: newProduct.image,
+      description: newProduct.description,
+    });
+  };
+  if (req.body.type === "keycap") {
+    await Keycap.create({
+      name: newProduct.name,
+      price: newProduct.price,
+      image: newProduct.image,
+      description: newProduct.description,
+    });
+  };
   res.redirect('/');
 });
 
