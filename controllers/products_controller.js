@@ -14,6 +14,9 @@ const Keycap = require('../models/Keycap');
 // };
 // addProducts();
 
+// adding test cart for now
+let cart = [];
+
 router.get('/', async (req,res) => {
   const context = await Product.find({});
   res.render('index.ejs', {keyboards: context});
@@ -27,6 +30,12 @@ router.get('/keyboards', async (req,res) => {
 router.get('/keyboards/:id', async (req,res) => {
   const context = await Product.findById(req.params.id);
   res.render('show.ejs', {keyboard: context});
+});
+
+router.post('/keyboards/:id', async (req,res) => {
+  const keyboardPurchased = {name: "example keyboard", color: "red"}; // this will later be async Product.findById(req.params.id)
+  keyboardPurchased.keycaps = "Example keycap set"; // this will later be req.body.keycaps
+  cart.push(keyboardPurchased);
 });
 
 router.get('/keycaps', async (req,res) => {
