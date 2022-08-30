@@ -21,12 +21,22 @@ router.get('/', async (req,res) => {
 
 router.get('/keyboards', async (req,res) => {
     const context = await Product.find({});
-    res.render('keyboards.ejs', {keyboards: context})
+    res.render('keyboards.ejs', {keyboards: context});
+});
+
+router.get('/keyboards/:id', async (req,res) => {
+  const context = await Product.findById(req.params.id);
+  res.render('show.ejs', {keyboard: context});
 });
 
 router.get('/keycaps', async (req,res) => {
-    const context = await Keycap.find({});
-    res.render('keycaps.ejs', {keycaps: context})
+  const context = await Keycap.find({});
+  res.render('keycaps.ejs', {keycaps: context})
+});
+
+router.get('/keycaps/:id', async (req,res) => {
+  const context = await Keycap.findById(req.params.id);
+  res.render('show.ejs', {keycap: context});
 });
 
 router.get('/:id', async (req,res) => {
