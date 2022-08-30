@@ -14,7 +14,7 @@ const Keycap = require('../models/Keycap');
 // };
 // addProducts();
 
-// adding test cart for now
+// adding test cart for now. We should eventually replace this with a database model
 let cart = [];
 
 router.get('/', async (req,res) => {
@@ -33,9 +33,10 @@ router.get('/keyboards/:id', async (req,res) => {
 });
 
 router.post('/keyboards/:id', async (req,res) => {
-  const keyboardPurchased = {name: "example keyboard", color: "red"}; // this will later be async Product.findById(req.params.id)
-  keyboardPurchased.keycaps = "Example keycap set"; // this will later be req.body.keycaps
+  const keyboardPurchased = await Product.findById(req.params.id);
+  keyboardPurchased.keycaps = req.body.keycaps;
   cart.push(keyboardPurchased);
+  res.render('cart.ejs', {cart: cart}); // cart is an array of objects, which can either be keyboards or keycaps
 });
 
 router.get('/keycaps', async (req,res) => {
@@ -46,6 +47,12 @@ router.get('/keycaps', async (req,res) => {
 router.get('/keycaps/:id', async (req,res) => {
   const context = await Keycap.findById(req.params.id);
   res.render('show.ejs', {keycap: context});
+});
+
+router.post('/keycaps/:id', async (req,res) => {
+  const keycapsPurchased = await Keycap.findById(req.params.id);
+  cart.push(keycapsPurchased);
+  res.render('cart.ejs', {cart: cart}); // cart is an array of objects, each of which can either be keyboards or keycaps
 });
 
 router.get('/:id', async (req,res) => {
