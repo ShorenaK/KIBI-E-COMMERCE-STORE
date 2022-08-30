@@ -10,13 +10,29 @@
     </head>
     <body>
         <h1>Edit product</h1>
-        <p><%= keycap !== null ? keycap.name : keyboard.name %> </p>
+        <% if (keycap !== null) {%>
+            <form action="/products/keycaps/<%= keycap._id %>/edit?_method=PUT" method="POST">
+                <input type="text" name="name" value="<%= keycap.name %>"></input>
+                <input type="text" name="image" value="<%= keycap.image %>"></input>
+                <input type="text" name="descripion" value="<%= keycap.description %>"></input>
+                <input type="number" name="price" value="<%= keycap.price %>"></input>
+                <input type="submit"></input>
+            </form>
+        <% } else {%>
+            <form action="/products/keyboards/<%= keyboard._id %>/edit?_method=PUT" method="POST">
+                <input type="text" name="name" value="<%= keyboard.name %>"></input>
+                <input type="text" name="image" value="<%= keyboard.image %>"></input>
+                <input type="text" name="descripion" value="<%= keyboard.description %>"></input>
+                <input type="number" name="price" value="<%= keyboard.price %>"></input>
+                <input type="submit"></input>
+            </form>
+        <% } %>
         <script src="" async defer></script>
         <% if (keycap !== null) {%>
             <form action="/products/keycaps/<%= keycap._id %>/edit?_method=DELETE" method="POST"%>
         <% } else { %>
             <form action="/products/keyboards/<%= keyboard._id %>/edit?_method=DELETE" method="POST"%></form>
-        <% } %>>
+        <% } %>
         <input type="submit" value="Delete"></input>
         </form>
     </body>
