@@ -27,7 +27,7 @@ router.get('/keyboards/:id', async (req,res) => {
 
 router.post('/keyboards/:id', async (req,res) => {
   const keyboardPurchased = await Product.findById(req.params.id);
-  keyboardPurchased.keycaps = req.body.keycaps;
+  // keyboardPurchased.keycaps = req.body.keycaps; // this is placeholder for when we add customization options in stretch goals
   cart.push(keyboardPurchased);
   res.render('cart.ejs', {cart: cart}); // cart is an array of objects, which can either be keyboards or keycaps
 });
