@@ -20,7 +20,7 @@ app.get('/cart', (req,res) => {
 
 app.post('/cart', (req,res) => {
   // send data from cart to financial system / inventory management system here in a real world application
-  res.redirect('thanks.ejs')
+  res.render('thanks.ejs')
 })
 
 app.get('/*', (req, res) => {
