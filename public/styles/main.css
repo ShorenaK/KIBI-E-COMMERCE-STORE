@@ -2,7 +2,8 @@ body {
     background-color: #ececec;
 }
 h1 {
-    font-family:'Dosis', sans-serif;;
+    font-family:'Dosis', sans-serif;
+    font-size: 70px;
 }
 .navbar a {
     text-decoration: none;
@@ -14,3 +15,8 @@ h1 {
     max-height: 640px;
     object-fit: contain;
 }
+#All img {
+    max-width: 300px;
+}
+
+
