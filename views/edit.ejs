@@ -27,7 +27,6 @@
                 <input type="submit"></input>
             </form>
         <% } %>
-        <script src="" async defer></script>
         <% if (keycap !== null) {%>
             <form action="/products/keycaps/<%= keycap._id %>/edit?_method=DELETE" method="POST"%>
         <% } else { %>
