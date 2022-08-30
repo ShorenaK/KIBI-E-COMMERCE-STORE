@@ -18,6 +18,11 @@ app.get('/cart', (req,res) => {
   res.render('cart.ejs')
 })
 
+app.post('/cart', (req,res) => {
+  // send data from cart to financial system / inventory management system here in a real world application
+  res.redirect('thanks.ejs')
+})
+
 app.get('/*', (req, res) => {
   res.render('404.ejs')
 })
