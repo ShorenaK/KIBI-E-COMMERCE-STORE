@@ -15,8 +15,13 @@ h1 {
     max-height: 640px;
     object-fit: contain;
 }
-#All img {
-    max-width: 300px;
+#carouselFade {
+    margin-bottom: 35px;
 }
-
-
+#new img {
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
