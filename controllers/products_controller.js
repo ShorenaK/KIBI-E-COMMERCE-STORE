@@ -48,8 +48,20 @@ router.get('/keycaps/:id/edit', async (req,res) => {
   res.render('edit.ejs', {keycap: context})
 });
 
+// assumes edit page will have an update button using PUT through method override
+router.put('/keycaps/:id/edit', async (req,res) => {
+  await Keycap.updateOne({_id: req.params.id},{
+    name: req.body.name,
+    image: req.body.image,
+    description: req.body.description,
+    price: req.body.price
+  });
+  res.render('/keycaps')
+});
+
+// assumes edit page will have a delete button using DELETE through method override
 router.delete('/keycaps/:id/edit', async (req,res) => {
-  Keycap.findByIdAndDelete(req.params.id);
+  await Keycap.findByIdAndDelete(req.params.id);
   res.redirect('/');
 });
 
