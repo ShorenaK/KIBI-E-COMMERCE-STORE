@@ -17,13 +17,30 @@ router.get('/', async (req,res) => {
 });
 
 router.get('/keyboards', async (req,res) => {
-    const context = await Product.find({});
-    res.render('keyboards.ejs', {keyboards: context});
+  const context = await Product.find({});
+  res.render('keyboards.ejs', {keyboards: context});
 });
 
 router.get('/keyboards/:id/edit', async (req,res) => {
   const context = await Product.findById(req.params.id);
   res.render('edit.ejs', {keyboard: context})
+});
+
+// assumes edit page will have an update button using PUT through method override
+router.put('/keyboards/:id/edit', async (req,res) => {
+  await Product.updateOne({_id: req.params.id},{
+    name: req.body.name,
+    image: req.body.image,
+    description: req.body.description,
+    price: req.body.price
+  });
+  res.render('/keyboards')
+});
+
+// assumes edit page will have a delete button using DELETE through method override
+router.delete('/keyboards/:id/edit', async (req,res) => {
+  await Product.findByIdAndDelete(req.params.id);
+  res.redirect('/');
 });
 
 router.get('/keyboards/:id', async (req,res) => {
@@ -95,14 +112,25 @@ router.post('/keycaps/:id', async (req,res) => {
 //   res.render('show.ejs', {keyboard: keyboardToShow, keycap: keycapToShow});
 // });
 
+// assumes form will include a way to select type: keyboard or keycap
 router.post('/new', async (req,res) => {
   const newProduct = req.body;
-  await Product.create({
-    name: newProduct.name,
-    price: newProduct.price,
-    image: newProduct.image,
-    description: newProduct.description,
-  });
+  if (req.body.type === "keyboard") {
+    await Product.create({
+      name: newProduct.name,
+      price: newProduct.price,
+      image: newProduct.image,
+      description: newProduct.description,
+    });
+  };
+  if (req.body.type === "keycap") {
+    await Keycap.create({
+      name: newProduct.name,
+      price: newProduct.price,
+      image: newProduct.image,
+      description: newProduct.description,
+    });
+  };
   res.redirect('/');
 });
 
