@@ -4,8 +4,15 @@ const mongoose = require('mongoose');
 router.use(express.json());
 router.use(express.urlencoded({ extended: true}));
 const seedProduct = require('../models/seed_products');
-const Product = require('../models/Product')
-const Keycap = require('../models/Keycap')
+const Product = require('../models/Product');
+const Keycap = require('../models/Keycap');
+
+// run this once to set up database
+// async function addProducts(products) {
+//   await Product.insertMany(seedProduct)
+//   console.log("Products added")
+// };
+// addProducts();
 
 router.get('/', async (req,res) => {
   const context = await Product.find({});
