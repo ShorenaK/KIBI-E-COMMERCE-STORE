@@ -8,11 +8,11 @@ const Product = require('../models/Product');
 const Keycap = require('../models/Keycap');
 
 // run this once to set up database
-// async function addProducts(products) {
-//   await Product.insertMany(seedProduct)
-//   console.log("Products added")
-// };
-// addProducts();
+async function addProducts(products) {
+  await Product.insertMany(seedProduct)
+  console.log("Products added")
+};
+addProducts();
 
 // adding test cart for now. We should eventually replace this with a database model
 let cart = [];
