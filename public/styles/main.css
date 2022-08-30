@@ -17,4 +17,5 @@ h1 {
 .carousel-item {
     max-width: 2000px;
     max-height: 700px;
+    object-fit: cover;
 }
