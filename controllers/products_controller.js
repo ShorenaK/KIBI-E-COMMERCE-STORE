@@ -7,7 +7,7 @@ router.use(express.urlencoded({ extended: true}));
 const Product = require('../models/Product');
 const Keycap = require('../models/Keycap');
 
-// adding test cart for now. We should eventually replace this with a database model
+// STRETCH: replace this with a database model
 let cart = [];
 
 router.get('/', async (req,res) => {
@@ -33,7 +33,7 @@ router.get('/keyboards/:id', async (req,res) => {
 
 router.post('/keyboards/:id', async (req,res) => {
   const keyboardPurchased = await Product.findById(req.params.id);
-  // keyboardPurchased.keycaps = req.body.keycaps; // this is placeholder for when we add customization options in stretch goals
+  // STRETCH: keyboardPurchased.keycaps = req.body.keycaps; // this is placeholder for when we add customization options in stretch goals
   cart.push(keyboardPurchased);
   res.render('cart.ejs', {cart: cart}); // cart is an array of objects, which can either be keyboards or keycaps
 });
@@ -64,24 +64,24 @@ router.post('/keycaps/:id', async (req,res) => {
   res.render('cart.ejs', {cart: cart}); // cart is an array of objects, each of which can either be keyboards or keycaps
 });
 
-// this will need to be updated to handle both keyboards and keycaps, since they are in separate collections
-router.get('/:id', async (req,res) => {
-  const keyboardToShow = await Product.findById(req.params.id, (err,result) => {
-    if (err) {
-      console.log("No keyboard found at this id");
-      return null;
-    }
-    return result;
-  });
-  const keycapToShow = await Keycap.findById(req.params.id, (err,result) => {
-    if (err) {
-      console.log("No keycap found at this id");
-      return null;
-    }
-    return result;
-  });
-  res.render('show.ejs', {keyboard: keyboardToShow, keycap: keycapToShow});
-});
+// deprecated
+// router.get('/:id', async (req,res) => {
+//   const keyboardToShow = await Product.findById(req.params.id, (err,result) => {
+//     if (err) {
+//       console.log("No keyboard found at this id");
+//       return null;
+//     }
+//     return result;
+//   });
+//   const keycapToShow = await Keycap.findById(req.params.id, (err,result) => {
+//     if (err) {
+//       console.log("No keycap found at this id");
+//       return null;
+//     }
+//     return result;
+//   });
+//   res.render('show.ejs', {keyboard: keyboardToShow, keycap: keycapToShow});
+// });
 
 router.post('/new', async (req,res) => {
   const newProduct = req.body;
