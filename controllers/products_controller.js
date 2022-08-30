@@ -130,10 +130,10 @@ router.post('/new', async (req,res) => {
   res.redirect('/');
 });
 
-router.get('/:id/edit', async (req,res) => {
-  const keycap = await Keycap.findById(req.params.id).exec()
-  const keyboard = await Product.findById(req.params.id).exec()
-  res.render('edit.ejs', {keycap: keycap, keyboard: keyboard});
+router.get('/edit', async (req,res) => {
+  const keycaps = await Keycap.find({})
+  const keyboards = await Product.find({})
+  res.render('edit.ejs', {keycaps: keycaps, keyboards: keyboards});
 });
 
 module.exports = {router: router, cart: cart};

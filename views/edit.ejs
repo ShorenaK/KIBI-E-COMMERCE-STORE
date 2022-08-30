@@ -9,8 +9,9 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <h1>Edit product</h1>
-        <% if (keycap !== null) {%>
+        <h1>Edit products</h1>
+        <h2>Keycaps</h2>
+        <% keycaps.forEach((keycap) => { %>
             <form action="/products/keycaps/<%= keycap._id %>/edit?_method=PUT" method="POST">
                 <input type="text" name="name" value="<%= keycap.name %>"></input>
                 <input type="text" name="image" value="<%= keycap.image %>"></input>
@@ -18,7 +19,12 @@
                 <input type="number" name="price" value="<%= keycap.price %>"></input>
                 <input type="submit"></input>
             </form>
-        <% } else {%>
+            <form action="/products/keycaps/<%= keycap._id %>/edit?_method=DELETE" method="POST">
+                <input type="submit" value="Delete"></input>
+            </form>
+        <% }) %>
+        <h2>Keyboards</h2>
+        <% keyboards.forEach((keyboard) => { %> 
             <form action="/products/keyboards/<%= keyboard._id %>/edit?_method=PUT" method="POST">
                 <input type="text" name="name" value="<%= keyboard.name %>"></input>
                 <input type="text" name="image" value="<%= keyboard.image %>"></input>
@@ -26,14 +32,9 @@
                 <input type="number" name="price" value="<%= keyboard.price %>"></input>
                 <input type="submit"></input>
             </form>
-        <% } %>
-        <script src="" async defer></script>
-        <% if (keycap !== null) {%>
-            <form action="/products/keycaps/<%= keycap._id %>/edit?_method=DELETE" method="POST"%>
-        <% } else { %>
-            <form action="/products/keyboards/<%= keyboard._id %>/edit?_method=DELETE" method="POST"%></form>
-        <% } %>
-        <input type="submit" value="Delete"></input>
-        </form>
+            <form action="/products/keyboards/<%= keyboard._id %>/edit?_method=DELETE" method="POST">
+                <input type="submit" value="Delete"></input>
+            </form>
+        <% }) %>
     </body>
 </html>
