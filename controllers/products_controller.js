@@ -46,7 +46,12 @@ router.get('/keycaps', async (req,res) => {
 router.get('/keycaps/:id/edit', async (req,res) => {
   const context = await Keycap.findById(req.params.id);
   res.render('edit.ejs', {keycap: context})
-})
+});
+
+router.delete('/keycaps/:id/edit', async (req,res) => {
+  Keycap.findByIdAndDelete(req.params.id);
+  res.redirect('/');
+});
 
 router.get('/keycaps/:id', async (req,res) => {
   const context = await Keycap.findById(req.params.id);
