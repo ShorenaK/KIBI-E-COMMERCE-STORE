@@ -2,19 +2,16 @@
 
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <%- include( 'partials/head.ejs' ) %>
+        <link rel="stylesheet" href="/styles/show.css">
     </head>
     <body>
         <section><%- include( 'partials/nav.ejs' )  %></section>
             <div>
                 <h2><%=keyboard.name%></h2>
-                <h3><%=keyboard.price%></h3>
+                <h3>$<%=keyboard.price%></h3>
                 <p><%=keyboard.description%><p>
+                <img src="<%= keyboard.image %>">
             </div>
         </div>
     </div>
