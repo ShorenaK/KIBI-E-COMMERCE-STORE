@@ -5,10 +5,21 @@ router.use(express.json());
 router.use(express.urlencoded({ extended: true}));
 const seedProduct = require('../models/seed_products');
 const Product = require('../models/Product')
+const Keycap = require('../models/Keycap')
 
 router.get('/', async (req,res) => {
   const context = await Product.find({});
   res.render('index.ejs', {keyboards: context});
+});
+
+router.get('/keyboards', async (req,res) => {
+    const context = await Product.find({});
+    res.render('keyboards.ejs', {keyboards: context})
+});
+
+router.get('/keycaps', async (req,res) => {
+    const context = await Keycap.find({});
+    res.render('keycaps.ejs', {keycaps: context})
 });
 
 router.get('/:id', async (req,res) => {
