@@ -1,3 +1,6 @@
 body {
-    background-color: black;
+    background-color: rgb(175, 174, 174);
+}
+.card img {
+    max-width: 400px;
 }
