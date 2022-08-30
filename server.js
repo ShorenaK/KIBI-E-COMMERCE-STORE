@@ -6,7 +6,7 @@ const methodOverride = require('method-override');
 const productsController = require('./controllers/products_controller')
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
-app.use('/products', productsController)
+app.use('/products', productsController.router)
 app.set('view engine','ejs');
 
 
@@ -15,7 +15,7 @@ app.get('/',(req, res)=>{
 })
 
 app.get('/cart', (req,res) => {
-  res.render('cart.ejs')
+  res.render('cart.ejs', {cart: productsController.cart})
 })
 
 app.post('/cart', (req,res) => {

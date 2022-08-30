@@ -64,4 +64,4 @@ router.post('/new', async (req,res) => {
   res.redirect('/');
 });
 
-module.exports = router;
+module.exports = {router: router, cart: cart};
