@@ -16,15 +16,15 @@
         <nav><%- include( 'partials/nav.ejs' )  %>
         </nav>
         <h1>Keyboards</h1>
+        <% keyboards.forEach(function(keyboard) { %>
             <div class="card" style="width: 18rem;" class="d-inline">
-                <% keyboards.forEach(function(keyboard) { %>
                 <img src="<%= keyboard.image %>" max width="300px" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><%= keyboard.name %></h5>
                   <p class="card-text">$<%= keyboard.price %></p>
                   <a href="/products/keyboards/<%=keyboard._id%>" class="btn btn-primary stretched-link">View</a>
-      <% }); %>
     </div>
+    <% }); %>
     <h1>Keycaps</h1>
 
       </div>
