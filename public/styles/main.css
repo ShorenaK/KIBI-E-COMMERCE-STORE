@@ -1,3 +1,21 @@
 body {
     background-color: #ececec;
 }
+.feat_img {
+    display: block;
+}
+.feat_img img {
+    width: 100%;
+}
+h1 {
+    font-family:'Dosis', sans-serif;;
+}
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+.carousel-item {
+    max-width: 2000px;
+    max-height: 700px;
+    object-fit: cover;
+}
