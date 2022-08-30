@@ -11,8 +11,9 @@ const Keycap = require('../models/Keycap');
 let cart = [];
 
 router.get('/', async (req,res) => {
-  const context = await Product.find({});
-  res.render('index.ejs', {keyboards: context});
+  const keyboards = await Product.find({});
+  const keycaps = await Keycap.find({})
+  res.render('index.ejs', {keyboards: keyboards, keycaps: keycaps});
 });
 
 router.get('/keyboards', async (req,res) => {
