@@ -21,6 +21,11 @@ router.get('/keyboards', async (req,res) => {
     res.render('keyboards.ejs', {keyboards: context});
 });
 
+router.get('/keyboards/:id/edit', async (req,res) => {
+  const context = await Product.findById(req.params.id);
+  res.render('edit.ejs', {keyboard: context})
+})
+
 router.get('/keyboards/:id', async (req,res) => {
   const context = await Product.findById(req.params.id);
   res.render('show.ejs', {keyboard: context});
@@ -37,6 +42,11 @@ router.get('/keycaps', async (req,res) => {
   const context = await Keycap.find({});
   res.render('keycaps.ejs', {keycaps: context})
 });
+
+router.get('/keycaps/:id/edit', async (req,res) => {
+  const context = await Keycap.findById(req.params.id);
+  res.render('edit.ejs', {keycap: context})
+})
 
 router.get('/keycaps/:id', async (req,res) => {
   const context = await Keycap.findById(req.params.id);
