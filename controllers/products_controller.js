@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
+const url = require('url');
 router.use(express.json());
 router.use(express.urlencoded({ extended: true}));
 // const seedProduct = require('../models/seed_products');
@@ -35,13 +36,13 @@ router.put('/keyboards/:id/edit', async (req,res) => {
     description: req.body.description,
     price: req.body.price
   });
-  res.render('/keyboards')
+  res.redirect('/products/edit');
 });
 
 // assumes edit page will have a delete button using DELETE through method override
 router.delete('/keyboards/:id/edit', async (req,res) => {
   await Product.findByIdAndDelete(req.params.id);
-  res.redirect('/');
+  res.redirect('/products/edit');
 });
 
 router.get('/keyboards/:id', async (req,res) => {
@@ -69,13 +70,15 @@ router.put('/keycaps/:id/edit', async (req,res) => {
     description: req.body.description,
     price: req.body.price
   });
-  res.render('/keycaps')
+  res.redirect(url.format({
+    pathname:"/products/"
+  }))
 });
 
 // assumes edit page will have a delete button using DELETE through method override
 router.delete('/keycaps/:id/edit', async (req,res) => {
   await Keycap.findByIdAndDelete(req.params.id);
-  res.redirect('/');
+  res.redirect('/products/edit');
 });
 
 router.get('/keycaps/:id', async (req,res) => {
@@ -133,7 +136,16 @@ router.post('/new', async (req,res) => {
 router.get('/edit', async (req,res) => {
   const keycaps = await Keycap.find({})
   const keyboards = await Product.find({})
-  res.render('edit.ejs', {keycaps: keycaps, keyboards: keyboards});
+  console.log(req.query)
+  let updatedItem;
+  if (req.query.type === "keycap") {
+    updatedItem = await Keycap.findById(req.query.id);
+  }
+  if (req.query.type === "keyboard") {
+    updatedItem = await Product.findById(req.query.id);
+  }
+  console.log(updatedItem)
+  res.render('edit.ejs', {keycaps: keycaps, keyboards: keyboards, updatedItem: updatedItem});
 });
 
 module.exports = {router: router, cart: cart};
