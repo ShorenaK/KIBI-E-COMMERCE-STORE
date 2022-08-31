@@ -4,13 +4,14 @@
         <%- include( 'partials/head.ejs' ) %>
         <link rel="stylesheet" href="/styles/show.css">
     </head>
-    <body>
+    <body> 
+    <% if (keycap === undefined) { %>
         <title><%=keyboard.name%></title>
         <section><%- include( 'partials/nav.ejs' )  %></section>
         <section class="container product">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-12">
-                    <img class="img-fluid w-100"src="<%= keyboard.image %>">
+                <img class="img-fluid w-100"src="<%= keyboard.image %>">
                 </div>
                 <div class="col-lg-6 col-md-12 col-12" id="info">
                 <h2><%=keyboard.name%></h2>
@@ -19,6 +20,21 @@
             </div>
         </div>
     </section>
+<% } %> 
+<% if (keyboard === undefined) { %>
+    <section class="container product">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-12">
+            <img class="img-fluid w-100"src="<%= keycap.image %>">
+            </div>
+            <div class="col-lg-6 col-md-12 col-12" id="info">
+            <h2><%=keycap.name%></h2>
+            <h3>$<%=keycap.price%></h3>
+            <p><%=keycap.description%><p>
+        </div>
+    </div>
+</section>
+<% } %>
     </body>
     <footer>
         <%- include( 'partials/footer.ejs' ) %>
