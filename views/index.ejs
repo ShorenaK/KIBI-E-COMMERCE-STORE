@@ -21,6 +21,17 @@
     </div>
     <div>
         <h1>Keycaps</h1>
+        <% keycaps.forEach(function(keycap) { %>
+            <div class="card" style="width: 18rem;">
+                <img src="<%= keycap.image %>" max width="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= keycap.name %></h5>
+                  <p class="card-text">$<%= keycap.price %></p>
+                  <a href="/products/keycaps/<%=keycap._id%>" class="btn btn-primary stretched-link">View</a>
+    </div>
+    <% }); %>
+    </div>
+    <div>
     </div>
     </body>
 </html>

@@ -3,6 +3,8 @@ body {
 }
 h1 {
     font-family:'Dosis', sans-serif;
+    margin-top: 20px;
+    margin-left: 250px;
     font-size: 70px;
 }
 .navbar {
@@ -12,7 +14,7 @@ h1 {
 }
 .carousel-item {
     max-width: 2000px;
-    max-height: 640px;
+    max-height: 600px;
     object-fit: contain;
 }
 #carouselFade {
@@ -32,4 +34,10 @@ h1 {
 .title {
     text-decoration: none;
     color: #000;
+}
+.navbar-nav {
+    margin-left: 210px;
+}
+.nav-item {
+    margin-left: 0px;
 }
