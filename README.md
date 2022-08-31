@@ -5,6 +5,9 @@
 
 "KIBI" e-commerce store is a webapplication that features the 7 RESTful routes
 The idea to build an e-cmoorece store to offer verioute selection of an amazing keyborads was born based on hobbiest among team members.  
+"KIBI" e-commerce store is a webapplication that features the 7 RESTful routes
+The idea to build an e-cmoorece store to offer verioute selection of an amazing keyborads was born based on commen hobbiest that team members have.  
+
 
 ## Features: 
 View products.
