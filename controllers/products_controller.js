@@ -8,7 +8,7 @@ router.use(express.urlencoded({ extended: true}));
 const Product = require('../models/Product');
 const Keycap = require('../models/Keycap');
 
-// STRETCH: replace this with a database model
+// STRETCH: replace this with a database model and make it session-specific (one per site visitor instead of shared)
 let cart = [];
 
 router.get('/', async (req,res) => {
@@ -53,7 +53,7 @@ router.delete('/keyboards/:id/edit', async (req,res) => {
 
 router.get('/keyboards/:id', async (req,res) => {
   const context = await Product.findById(req.params.id);
-  res.render('show.ejs', {keyboard: context});
+  res.render('show.ejs', {keyboard: context, keycap: undefined});
 });
 
 router.post('/keyboards/:id', async (req,res) => {
@@ -93,7 +93,7 @@ router.delete('/keycaps/:id/edit', async (req,res) => {
 
 router.get('/keycaps/:id', async (req,res) => {
   const context = await Keycap.findById(req.params.id);
-  res.render('show.ejs', {keycap: context});
+  res.render('show.ejs', {keycap: context, keyboard: undefined});
 });
 
 router.post('/keycaps/:id', async (req,res) => {
