@@ -17,6 +17,7 @@
                 <h2><%=keyboard.name%></h2>
                 <h3>$<%=keyboard.price%></h3>
                 <p><%=keyboard.description%><p>
+                <form action="/products/keyboards/<%= keyboard._id %>" method="POST"><input type="submit" value="Add To Cart"></form>
             </div>
         </div>
     </section>

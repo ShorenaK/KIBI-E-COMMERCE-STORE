@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <%- include( 'partials/head.ejs' ) %>
+    <link rel="stylesheet" href="/styles/cart.css">
 </head>
 <body>
+    <nav><%- include( 'partials/nav.ejs' )  %>
+    </nav>
+    <div class="cart">
+    <div class="inner-cart">
     <h1>Cart</h1>
     <% cart.forEach((item) => { %>
+        <div class="cart-img">
+        <img src="<%= item.image %>"/>
+        </div>
+        <div class="info">
         <h2><%= item.name %></h2>
-        <img src="<%= item.image %>" />
-        <p><%= item.price %></p>
+        <h3>$<%= item.price %></h3>
+        </div>
+    </div>
+    </div>
     <% }) %>
 </body>
 </html>
