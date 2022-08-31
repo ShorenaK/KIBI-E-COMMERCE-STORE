@@ -3,16 +3,18 @@ body {
 }
 h1 {
     font-family:'Dosis', sans-serif;
+    margin-top: 20px;
+    margin-left: 250px;
     font-size: 70px;
 }
-.navbar a {
+.navbar {
     text-decoration: none;
     color: #000;
-    background-color: white;
+    background-color: transparent;
 }
 .carousel-item {
     max-width: 2000px;
-    max-height: 640px;
+    max-height: 600px;
     object-fit: contain;
 }
 #carouselFade {
@@ -24,4 +26,18 @@ h1 {
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
+}
+.navbar {
+    width: 100%;
+    box-shadow: rgba(33, 35, 38, 0.137) 0px 10px 20px -10px;
+}
+.title {
+    text-decoration: none;
+    color: #000;
+}
+.navbar-nav {
+    margin-left: 210px;
+}
+.nav-item {
+    margin-left: 0px;
 }
