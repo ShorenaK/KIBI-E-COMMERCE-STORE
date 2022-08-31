@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <%- include( 'partials/head.ejs' ) %>
         <link rel="stylesheet" href="/styles/show.css">
     </head>
     <body>
+        <title><%=keyboard.name%></title>
         <section><%- include( 'partials/nav.ejs' )  %></section>
-            <div>
+        <section class="container product">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <img class="img-fluid w-100"src="<%= keyboard.image %>">
+                </div>
+                <div class="col-lg-6 col-md-12 col-12" id="info">
                 <h2><%=keyboard.name%></h2>
                 <h3>$<%=keyboard.price%></h3>
                 <p><%=keyboard.description%><p>
-                <img src="<%= keyboard.image %>">
             </div>
         </div>
-    </div>
+    </section>
     </body>
     <footer>
         <%- include( 'partials/footer.ejs' ) %>
