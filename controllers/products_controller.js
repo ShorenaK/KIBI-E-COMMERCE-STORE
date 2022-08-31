@@ -22,12 +22,6 @@ router.get('/keyboards', async (req,res) => {
   res.render('keyboards.ejs', {keyboards: context});
 });
 
-// deprecated by combined edit route
-// router.get('/keyboards/:id/edit', async (req,res) => {
-//   const context = await Product.findById(req.params.id);
-//   res.render('edit.ejs', {keyboard: context})
-// });
-
 // assumes edit page will have an update button using PUT through method override
 router.put('/keyboards/:id/edit', async (req,res) => {
   await Product.updateOne({_id: req.params.id},{
@@ -101,25 +95,6 @@ router.post('/keycaps/:id', async (req,res) => {
   cart.push(keycapsPurchased);
   res.render('cart.ejs', {cart: cart}); // cart is an array of objects, each of which can either be keyboards or keycaps
 });
-
-// deprecated
-// router.get('/:id', async (req,res) => {
-  //   const keyboardToShow = await Product.findById(req.params.id, (err,result) => {
-    //     if (err) {
-      //       console.log("No keyboard found at this id");
-      //       return null;
-      //     }
-      //     return result;
-      //   });
-      //   const keycapToShow = await Keycap.findById(req.params.id, (err,result) => {
-        //     if (err) {
-          //       console.log("No keycap found at this id");
-          //       return null;
-          //     }
-          //     return result;
-          //   });
-          //   res.render('show.ejs', {keyboard: keyboardToShow, keycap: keycapToShow});
-          // });
 
 router.get('/new', (req,res) => {
   res.render('new.ejs');

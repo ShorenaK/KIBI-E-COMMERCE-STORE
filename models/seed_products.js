@@ -12,7 +12,7 @@ module.exports =[{
     id: 1},{
     name: 'KDS Transmutation', 
     price: 99.99, 
-    image: 'https://cdn.shopify.com/s/files/1/1994/3097/products/TRANSMUTATION---FINAL-PhotoRoom_1390x1390.png?v=1660858243',
+    image: 'https://cdn.shopify.com/s/files/1/1994/3097/products/TRANSMUTATION-HI-RES-3_830x554.jpg?v=1660858243',
     description:'Designed by Jake Myler, Cherry profile Keycaps, Compatible with Cherry MX switches, Fade resistant dye-sublimated ',
     id: 2},{
     name: 'KDS Solarized Dark', 
@@ -34,4 +34,4 @@ module.exports =[{
 
 
 
-    
+   

@@ -5,6 +5,6 @@ const cartSchema = new mongoose.Schema({
  }, {timestamps: true})
  
 
-const cartSchema1 = mongoose.model('Cart', cartSchema)
+const cartSchemaModel = mongoose.model('Cart', cartSchema)
 
-module.exports = cartSchema1
+module.exports = cartSchemaModel
