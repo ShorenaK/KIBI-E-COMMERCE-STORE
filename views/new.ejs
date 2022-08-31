@@ -10,6 +10,17 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <script src="" async defer></script>
+        <h1>Add new product</h1>
+        <form action="/products/new" method="POST">
+            <input type="radio" name="type" value="keyboard"></input>
+            <label for="keyboard">Keyboard</label>
+            <input type="radio" name="type" value="keycap"></input>
+            <label for="keycap">Keycap</label>
+            <input type="text" name="name" placeholder="Name"></input>
+            <input type="text" name="image" placeholder="Image URL"></input>
+            <input type="text" name="description" placeholder="Description"></input>
+            <input type="number" name="price" placeholder="Price"></input>
+            <input type="submit"></input>
+        </form>
     </body>
 </html>

@@ -120,6 +120,10 @@ router.post('/keycaps/:id', async (req,res) => {
           //   });
           //   res.render('show.ejs', {keyboard: keyboardToShow, keycap: keycapToShow});
           // });
+
+router.get('/new', (req,res) => {
+  res.render('new.ejs');
+});
           
 // assumes form will include a way to select type: keyboard or keycap
 router.post('/new', async (req,res) => {
