@@ -81,3 +81,11 @@ img {
 #info {
     margin: 20px;
 }
+input {
+    background-color: #772ce8;
+    border-color: #772ce8;
+    color:#efeff1;
+    border-radius: 10px;
+    width: 260px;
+    height: 60px;
+}

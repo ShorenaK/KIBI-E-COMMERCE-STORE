@@ -42,3 +42,7 @@ img {
 .info {
     display: inline;
 }
+#cart {
+    background-color: #772ce8;
+    border-color: #772ce8;
+}
