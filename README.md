@@ -39,4 +39,4 @@ To see the application, click (link).
 
 ## Credits:
 
-This development was coded and created by Estrella Alvarez, Steven Calhoun, Shorena K. Anzhilov. 
+This development was coded and created by Estrella Alvarez https://github.com/estrellaalvarez, Steven Calhoun https://github.com/StevieC7, Shorena K. Anzhilov. 
