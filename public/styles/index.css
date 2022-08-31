@@ -49,9 +49,10 @@ h1 {
 .title {
     font-size: 50px;
     margin-bottom: 60px;
+    margin-left: 20px;
 }
 .card-title, .card-text {
-    color: black;
+    color: #efeff1;
 }
 .card {
     background-color: #3a3a41;
@@ -62,5 +63,9 @@ h1 {
 }
 .btn {
     background-color: #772ce8;
+    border-color: #772ce8;
+}
+.btn:hover {
+    background-color: #8846ec;
     border-color: #772ce8;
 }
