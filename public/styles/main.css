@@ -16,6 +16,7 @@ h1 {
     max-width: 2000px;
     max-height: 600px;
     object-fit: contain;
+    position: relative;
 }
 #carouselFade {
     margin-bottom: 35px;
@@ -40,4 +41,9 @@ h1 {
 }
 .nav-item {
     margin-left: 0px;
+}
+.ft {
+    position: relative;
+    border: #000;
+    font-size: 30px;
 }
