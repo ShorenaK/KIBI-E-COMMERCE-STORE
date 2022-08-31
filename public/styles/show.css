@@ -11,9 +11,10 @@ h1 {
     font-size: 70px;
     color: #efeff1;
 }
-h2 {
+#info h2 {
     font-family:'Dosis', sans-serif;
     margin-top: 20px;
+    margin-left: 0px;
     font-size: 30px;
     color: #efeff1;
 }
@@ -24,15 +25,6 @@ h3, p {
     text-decoration: none;
     color: #000;
     background-color: transparent;
-}
-.carousel-item {
-    max-width: 2000px;
-    max-height: 600px;
-    object-fit: contain;
-    position: relative;
-}
-#carouselFade {
-    margin-bottom: 35px;
 }
 #new img {
     max-width: 100%;
@@ -84,6 +76,7 @@ h3, p {
 img {
     margin: 30px; 
     padding: 10px;
+    border-radius: 30px;
 }
 #info {
     margin: 20px;
