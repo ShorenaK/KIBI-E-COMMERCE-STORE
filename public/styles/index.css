@@ -1,19 +1,22 @@
 body {
-    background-color: #ececec;
+    background-color: #18181b;
+    color: #efeff1;
 }
 .card img {
     max-width: 400px;
 }
 .card {
     overflow: hidden;
-    display:block;
+    display: inline-block;
     max-width: 500px;
+    display: inline-grid;
 }
 h1 {
     font-family:'Dosis', sans-serif;
     margin-top: 20px;
     margin-left: 250px;
     font-size: 70px;
+    color: #efeff1;
 }
 .navbar {
     text-decoration: none;
@@ -40,4 +43,7 @@ h1 {
 }
 .nav-item {
     margin-left: 0px;
+}
+#nv {
+    color: #efeff1;
 }
