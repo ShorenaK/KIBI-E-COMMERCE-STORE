@@ -30,6 +30,7 @@ h1 {
     margin-left: 210px;
 }
 img {
+    border-radius: 10px;
     max-width: 300px;
     margin: 20px;
 }
@@ -57,4 +58,16 @@ img {
     float: end;
     margin-top: -90px;
     margin-left: 1500px;
+}
+.btn {
+    background-color: #772ce8;
+    border-color: #772ce8;
+    margin: 30px;
+}
+.btn:hover {
+    background-color: #8846ec;
+    border-color: #772ce8;
+}
+.head {
+    margin-left: 0px;
 }
