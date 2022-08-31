@@ -18,8 +18,8 @@
                   <p class="card-text">$<%= keyboard.price %></p>
                   <a href="/products/keyboards/<%=keyboard._id%>" class="btn btn-primary">View</a>
     </div>
-    <% }); %>
     </div>
+    <% }); %>
     <div>
         <h1>Keycaps</h1>
         <% keycaps.forEach(function(keycap) { %>
@@ -30,10 +30,8 @@
                   <p class="card-text">$<%= keycap.price %></p>
                   <a href="/products/keycaps/<%=keycap._id%>" class="btn btn-primary">View</a>
     </div>
+    </div>
     <% }); %>
-    </div>
-    <div>
-    </div>
     </body>
     <footer>
     <%- include( 'partials/footer.ejs' ) %>
