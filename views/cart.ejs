@@ -10,7 +10,8 @@
     <h1>Cart</h1>
     <% cart.forEach((item) => { %>
         <h2><%= item.name %></h2>
+        <img src="<%= item.image %>" />
         <p><%= item.price %></p>
-    <% }) %> 
+    <% }) %>
 </body>
 </html>
