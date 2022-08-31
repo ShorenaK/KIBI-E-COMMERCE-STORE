@@ -66,6 +66,13 @@ h2 {
     background-color: #772ce8;
     height: 60px;
     width: 180px;
+    border-radius: 10px;
+    margin-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#TU:hover {
+    background-color: #8f52eb;
 }
 #cart {
     width: 130px;
