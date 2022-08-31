@@ -10,7 +10,9 @@
     </head>
     <body>
         <h1>Edit products</h1>
-        <p>Item updated successfully: <%= updatedItem.name %> </p>
+        <% if (updatedItem !== null && updatedItem !== undefined) {%> 
+          <p>Item updated successfully: <%= updatedItem.name %> </p>
+        <% } %> 
         <h2>Keycaps</h2>
         <% keycaps.forEach((keycap) => { %>
             <form action="/products/keycaps/<%= keycap._id %>/edit?_method=PUT" method="POST">

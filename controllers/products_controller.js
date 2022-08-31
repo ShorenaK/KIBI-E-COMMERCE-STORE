@@ -36,7 +36,13 @@ router.put('/keyboards/:id/edit', async (req,res) => {
     description: req.body.description,
     price: req.body.price
   });
-  res.redirect('/products/edit');
+  res.redirect(url.format({
+    pathname:"/products/edit",
+    query: {
+      type: 'keyboard',
+      id: req.params.id,
+    }
+  }));
 });
 
 // assumes edit page will have a delete button using DELETE through method override
@@ -71,8 +77,12 @@ router.put('/keycaps/:id/edit', async (req,res) => {
     price: req.body.price
   });
   res.redirect(url.format({
-    pathname:"/products/"
-  }))
+    pathname:"/products/edit",
+    query: {
+      type: 'keycap',
+      id: req.params.id,
+    }
+  }));
 });
 
 // assumes edit page will have a delete button using DELETE through method override
