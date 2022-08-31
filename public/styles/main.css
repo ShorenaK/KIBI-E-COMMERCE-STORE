@@ -1,11 +1,19 @@
 body {
-    background-color: #ececec;
+    background-color: #18181b;
 }
 h1 {
     font-family:'Dosis', sans-serif;
     margin-top: 20px;
     margin-left: 250px;
     font-size: 70px;
+    color: #efeff1;
+}
+h2 {
+    font-family:'Dosis', sans-serif;
+    margin-top: 20px;
+    margin-left: 250px;
+    font-size: 30px;
+    color: #efeff1;
 }
 .navbar {
     text-decoration: none;
@@ -16,6 +24,7 @@ h1 {
     max-width: 2000px;
     max-height: 600px;
     object-fit: contain;
+    position: relative;
 }
 #carouselFade {
     margin-bottom: 35px;
@@ -30,14 +39,37 @@ h1 {
 .navbar {
     width: 100%;
     box-shadow: rgba(33, 35, 38, 0.137) 0px 10px 20px -10px;
+    background-color: #18181b;
 }
 .title {
     text-decoration: none;
-    color: #000;
+    color: #efeff1;
 }
 .navbar-nav {
     margin-left: 210px;
+    color: #efeff1;
 }
 .nav-item {
     margin-left: 0px;
+    background-color: #18181b;
+    color: #efeff1;
+}
+.ft {
+    position: relative;
+    border: #000;
+    font-size: 30px;
+}
+#nv {
+    color: #efeff1;
+}
+#TU {
+    background-color: #772ce8;
+    height: 60px;
+    width: 180px;
+}
+#cart {
+    background-color: #772ce8;
+}
+.head {
+    display: inline-block;
 }

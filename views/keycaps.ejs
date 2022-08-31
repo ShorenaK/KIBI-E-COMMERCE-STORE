@@ -1,7 +1,12 @@
 <html>
     <head>
         <%- include( 'partials/head.ejs' ) %>
+        <link rel="stylesheet" href="/styles/index.css">
     </head>
+    <nav><%- include( 'partials/nav.ejs' )  %>
+    </nav>
+    <title>Keycaps</title>
+    <body>
 <h1>Keycap Sets</h1>
 <% keycaps.forEach(function(keycap) { %>
     <div class="card" style="width: 18rem;">
@@ -9,9 +14,13 @@
         <div class="card-body">
           <h5 class="card-title"><%= keycap.name %></h5>
           <p class="card-text">$<%= keycap.price %></p>
-          <a href="/products/keycaps/<%=keycaps._id%>" class="btn btn-primary stretched-link">View</a>
+          <a href="/products/keycaps/<%=keycaps._id%>" class="btn btn-primary">View</a>
 </div>
 <% }); %>
 </div>
 <div>
 </div>
+</body>
+<footer>
+    <%- include( 'partials/footer.ejs' ) %>
+    </footer>

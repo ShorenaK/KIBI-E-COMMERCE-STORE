@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="/styles/index.css">
     </head>
     <body>
+        <title>All Products</title>
         <nav><%- include( 'partials/nav.ejs' )  %>
         </nav>
         <h1>Keyboards</h1>
@@ -15,7 +16,7 @@
                 <div class="card-body">
                   <h5 class="card-title"><%= keyboard.name %></h5>
                   <p class="card-text">$<%= keyboard.price %></p>
-                  <a href="/products/keyboards/<%=keyboard._id%>" class="btn btn-primary stretched-link">View</a>
+                  <a href="/products/keyboards/<%=keyboard._id%>" class="btn btn-primary">View</a>
     </div>
     <% }); %>
     </div>
@@ -27,11 +28,14 @@
                 <div class="card-body">
                   <h5 class="card-title"><%= keycap.name %></h5>
                   <p class="card-text">$<%= keycap.price %></p>
-                  <a href="/products/keycaps/<%=keycap._id%>" class="btn btn-primary stretched-link">View</a>
+                  <a href="/products/keycaps/<%=keycap._id%>" class="btn btn-primary">View</a>
     </div>
     <% }); %>
     </div>
     <div>
     </div>
     </body>
+    <footer>
+    <%- include( 'partials/footer.ejs' ) %>
+    </footer>
 </html>
