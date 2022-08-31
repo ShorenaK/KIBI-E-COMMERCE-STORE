@@ -3,8 +3,8 @@
 
 ## Introduction:
 
-KIBI is a website (or should I put an app) that features the 7 RESTful routes
-The idea was to build an app .........
+"KIBI" e-commerce store is a webapplication that features the 7 RESTful routes
+The idea to build an e-cmoorece store to offer verioute selection of an amazing keyborads was born based on hobbiest among team members.  
 
 ## Features: 
 View products.
