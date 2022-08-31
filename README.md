@@ -1,22 +1,20 @@
 ![](http://imgur.com/t3teAxi.png)
-### :handbag: A simple RESTful API to purchase Keyboards and Keycaps on e-commerce.
+### :handbag: A simple RESTful Web App to purchase Keyboards and Keycaps on e-commerce store.
 
 ## Introduction:
 
-"KIBI" e-commerce store is a web application that features the 7 RESTful routes. 
-The idea to build an awsome e-commerce store to offer various selection of great quality keyboards was born based on commen hobbies of team (or group) members relative to the keyboard.  
+"KIBI" e-commerce store is a web application that features the 7 RESTful routes. The idea to build an awesome e-commerce store to offer various great quality keyboards was born based on common hobbies of team members.
 
 
 ## Features: 
-Display all products, Keyboards & Keycaps Set.
+Display all products "Keyboards & Keycaps Set".
 View to display all Keyboard.
 View to display all Keycaps set.
-View page to show per item product .
-Edit a Keyboard & Keycaps product listing.
+View page to show each individual product.
+Edit a Keyboard & Keycaps listing.
 Create a product listing.
 Delete a product listing.
-MAYBE: Ability to filter items.
-MAYBE: Ability to add items to a cart.
+Ability to add items to a cart.
 
 ## Development Tools:
 
@@ -26,6 +24,8 @@ The application was built with Node.js, Mongoose, Express and EJS. The file stru
 ## Challenges:
 
 
+
+## High Lights:
 
 
 
@@ -39,4 +39,4 @@ To see the application, click (link).
 
 ## Credits:
 
-This development was coded and created by Estrella Alvarez, Steven Calhoun, Shorena K. Anzhilov. The objective of this repository is RESTful API's with Java Script, Express APP, EJS  +  Mongoose & MongoDB.
+This development was coded and created by Estrella Alvarez, Steven Calhoun, Shorena K. Anzhilov. 
