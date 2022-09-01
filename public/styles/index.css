@@ -31,7 +31,15 @@ h1 {
 }
 .navbar {
     width: 100%;
+}
+.navbar {
+    width: 100%;
     box-shadow: rgba(33, 35, 38, 0.137) 0px 10px 20px -10px;
+    background-color: #18181b;
+    border-bottom: 1px solid gray;
+}
+.navbar .navbar-expand-lg {
+    border-bottom: none;
 }
 .title {
     text-decoration: none;
@@ -47,7 +55,7 @@ h1 {
     color: #efeff1;
 }
 .title {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 60px;
     margin-left: 20px;
 }
@@ -59,7 +67,7 @@ h1 {
 }
 .card {
     background-color: #3a3a41;
-    margin: 5px;
+    margin: 10px;
     min-height: 500px;
 }
 .btn {

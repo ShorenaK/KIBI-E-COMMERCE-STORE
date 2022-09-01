@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <%- include( 'partials/head.ejs' ) %>
         <link rel="stylesheet" href="/styles/show.css">
+        <%- include( 'partials/head.ejs' ) %>
     </head>
     <body> 
+        <nav><%- include( 'partials/nav.ejs' )  %>
+        </nav>
     <% if (keycap === undefined) { %>
         <title><%=keyboard.name%></title>
-        <section><%- include( 'partials/nav.ejs' )  %></section>
         <section class="container product">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-12">

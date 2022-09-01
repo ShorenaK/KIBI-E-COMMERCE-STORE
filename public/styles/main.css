@@ -1,6 +1,11 @@
 body {
     background-color: #18181b;
 }
+.logo {
+    width: 70px;
+    height: 70px;
+    transform: translate(240%, 140%);
+}
 h1 {
     font-family:'Dosis', sans-serif;
     margin-top: 20px;
@@ -40,6 +45,10 @@ h2 {
     width: 100%;
     box-shadow: rgba(33, 35, 38, 0.137) 0px 10px 20px -10px;
     background-color: #18181b;
+    border-bottom: 1px solid gray;
+}
+.navbar .navbar-expand-lg {
+    border-bottom: none;
 }
 .title {
     text-decoration: none;
@@ -109,4 +118,8 @@ h2 {
     background-color: #323238;
     border-radius: 15px;
     padding: 20px;
+}
+.head {
+    margin-top: -50px; 
+    transform: translate(24%, 0%);
 }

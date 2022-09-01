@@ -36,6 +36,7 @@ img {
 }
 .cart {
     background-color: #26262b;
+    padding: 40px;
 }
 .inner-cart {
     margin: 40px;
@@ -70,4 +71,12 @@ img {
 }
 .head {
     margin-left: 0px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    transform: translate(255%, 165%);
+}
+.head {
+    margin-top: -50px; 
 }

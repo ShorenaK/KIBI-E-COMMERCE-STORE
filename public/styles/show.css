@@ -46,6 +46,15 @@ h3, p {
     margin-left: 210px;
     color: #efeff1;
 }
+.navbar {
+    width: 100%;
+    box-shadow: rgba(33, 35, 38, 0.137) 0px 10px 20px -10px;
+    background-color: #18181b;
+    border-bottom: 1px solid gray;
+}
+.navbar .navbar-expand-lg {
+    border-bottom: none;
+}
 .nav-item {
     margin-left: 0px;
     background-color: #18181b;
@@ -89,4 +98,17 @@ input {
     width: 260px;
     height: 60px;
     font-weight: bold;
+}
+.head {
+    margin-top: -50px; 
+    transform: translate(24%, 0%);
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    transform: translate(255%, 165%);
+}
+.head {
+    margin-top: -50px; 
+    transform: translate(24%, 0%);
 }
