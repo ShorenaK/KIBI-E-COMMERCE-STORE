@@ -28,6 +28,6 @@ module.exports =[{
     name: 'Kono Midnight Switches', 
     price: 7.49, 
     image: 'https://cdn.shopify.com/s/files/1/1994/3097/products/MidnightSwitches_Single_001_1390x1390.jpg?v=1624575815',
-    description: 'Designed by Plop, Produced by ePBT, Cherry Profile, PBT Dyesub, Deskmats: stitched edge, THOK Novelty: Aluminum',
+    description: 'Surface-mount LED compatible, MX-stem keycap compatible, Hot-swap compatible (3-pin / plate mount), 69g Gold Plated Custom Lengthened Spring, 3mm total travel',
     id: 5
     }]
