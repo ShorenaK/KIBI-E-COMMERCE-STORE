@@ -98,6 +98,7 @@ h2 {
     display: inline-block;
 }
 .foot {
+    border-top: 1px solid gray;
     color: #efeff1;
 }
 #ty {

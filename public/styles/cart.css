@@ -36,10 +36,8 @@ img {
 }
 .cart {
     background-color: #26262b;
-    padding: 40px;
 }
 .inner-cart {
-    margin: 40px;
     display: inline-block;
 }
 .info {
@@ -70,7 +68,8 @@ img {
     border-color: #772ce8;
 }
 .head {
-    margin-left: 0px;
+    margin-left: 30px;
+    transform: translate(0%, 30%);
 }
 .logo {
     width: 60px;
@@ -78,5 +77,14 @@ img {
     transform: translate(255%, 165%);
 }
 .head {
-    margin-top: -50px; 
+    transform: translate(5%, -20%);
+    margin: -25px
+}
+.foot {
+    border-top: 1px solid gray;
+    color: #efeff1;
+}
+.cart-page {
+    background-color: #26262b;
+    padding: 40px;
 }
