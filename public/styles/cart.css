@@ -30,11 +30,13 @@ h1 {
     margin-left: 210px;
 }
 img {
+    border-radius: 10px;
     max-width: 300px;
     margin: 20px;
 }
 .cart {
     background-color: #26262b;
+    padding: 40px;
 }
 .inner-cart {
     margin: 40px;
@@ -46,4 +48,35 @@ img {
 #cart {
     background-color: #772ce8;
     border-color: #772ce8;
+}
+#nv {
+    color: #efeff1;
+}
+#cart {
+    width: 130px;
+    background-color: #772ce8;
+    border-color: #772ce8;
+    float: end;
+    margin-top: -90px;
+    margin-left: 1500px;
+}
+.btn {
+    background-color: #772ce8;
+    border-color: #772ce8;
+    margin: 30px;
+}
+.btn:hover {
+    background-color: #8846ec;
+    border-color: #772ce8;
+}
+.head {
+    margin-left: 0px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    transform: translate(255%, 165%);
+}
+.head {
+    margin-top: -50px; 
 }

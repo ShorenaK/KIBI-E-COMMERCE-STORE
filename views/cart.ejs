@@ -13,7 +13,7 @@
     </nav>
     <div class="cart">
     <div class="inner-cart">
-    <h1>Cart</h1>
+    <h1 class="head">Cart</h1>
     <% cart.forEach((item) => { %>
         <div class="cart-img">
         <img src="<%= item.image %>"/>
@@ -25,5 +25,6 @@
     </div>
     </div>
     <% }) %>
+    <a href="/thanks" class="btn btn-primary"><strong>Check Out</strong></a>
 </body>
 </html>
