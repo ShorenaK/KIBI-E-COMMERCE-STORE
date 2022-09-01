@@ -98,6 +98,7 @@ h2 {
     display: inline-block;
 }
 .foot {
+    border-top: 1px solid gray;
     color: #efeff1;
 }
 #ty {
@@ -122,4 +123,46 @@ h2 {
 .head {
     margin-top: -50px; 
     transform: translate(24%, 0%);
+}
+.new h1, #edit-h1 {
+    font-size: 40px;
+}
+input {
+    accent-color: #772ce8;
+}
+.bar {
+    width: 200px;
+    height: 30px;
+    background-color: #e4e4f1;
+    border-radius: 8px;
+    text-overflow: ellipsis;
+}
+.bar:hover {
+    background-color: #ffffff;
+}
+#submit-btn {
+    height: 40px;
+    width: 100px;
+    background-color: #823deb;
+    border-radius: 50px;
+    color:#efeff1;
+    font-weight: bold;
+}
+#submit-btn:hover {
+    background-color: #8f52eb;
+}
+span {
+    font-weight: bold;
+    color:#efeff1;
+}
+#delete-btn {
+    height: 40px;
+    width: 100px;
+    background-color: #823deb;
+    border-radius: 50px;
+    color:#efeff1;
+    font-weight: bold;
+}
+#delete-btn:hover {
+    background-color: #fc3b3b;
 }
