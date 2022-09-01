@@ -6,6 +6,11 @@
 "KIBI" e-commerce store is a web application that features the 7 RESTful routes. The idea to build an awesome e-commerce store to offer various great quality keyboards was born based on common hobbies of team members.
 
 
+## Credits:
+
+This development was coded and created by Estrella Alvarez https://github.com/estrellaalvarez, Steven Calhoun https://github.com/StevieC7, Shorena K. Anzhilov https://github.com/ShorenaK .
+
+
 ## Features: 
 Display all products "Keyboards & Keycaps Set".
 View to display all Keyboard.
@@ -25,7 +30,9 @@ The application was built with Node.js, Mongoose, Express and EJS. The file stru
 
 
 
-## High Lights:
+## Highlights:
+
+
 
 
 
@@ -35,11 +42,9 @@ The application was built with Node.js, Mongoose, Express and EJS. The file stru
  ## Home Page:
 ![](./git/git1.png)
 
+
 ## Link to hosted application:
 To see the application, click (link).
 
 
-## Credits:
-
-This development was coded and created by Estrella Alvarez https://github.com/estrellaalvarez, Steven Calhoun https://github.com/StevieC7, Shorena K. Anzhilov. 
 
