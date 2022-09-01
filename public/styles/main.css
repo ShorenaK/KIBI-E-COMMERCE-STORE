@@ -62,6 +62,9 @@ h2 {
 #nv {
     color: #efeff1;
 }
+#nv:hover {
+    color: #823deb;
+}
 #TU {
     background-color: #772ce8;
     height: 60px;
@@ -87,4 +90,23 @@ h2 {
 }
 .foot {
     color: #efeff1;
+}
+#ty {
+    margin-left: 165px;
+    margin-top: 30px;
+}
+.ty-kc {
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    border-radius: 15px;
+    margin-left: 100px;
+}
+.ty-card {
+    transform: translate(100%, 5%);
+    width: 650px;
+    height: 600px;
+    background-color: #323238;
+    border-radius: 15px;
+    padding: 20px;
 }

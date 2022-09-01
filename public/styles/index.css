@@ -54,9 +54,13 @@ h1 {
 .card-title, .card-text {
     color: #efeff1;
 }
+#key {
+    min-height: 400px;
+}
 .card {
     background-color: #3a3a41;
     margin: 5px;
+    min-height: 500px;
 }
 .btn {
     background-color: #772ce8;
