@@ -22,7 +22,7 @@ module.exports =[{
     id: 3},{
     name: 'Kailh BOX Quicksand Gold Switch (10 ct.)', 
     price: 2.99, 
-    image: 'https://cdn.shopify.com/s/files/1/1994/3097/products/CPG1511F01S49-QuicksandGold_800x800.jpg?v=1622226050',
+    image: 'https://cdn.shopify.com/s/files/1/1994/3097/products/CPG1511F01S70-1_800x800.jpg?v=1653073108',
     description: 'Super long lifespan, 10 switches per pack, 3-pin / Plate mount, Light weight: 45 gram spring, Tactile bump, Kailh BOX switch architecture, SMD LED Compatible',
     id: 4},{
     name: 'Kono Midnight Switches', 
