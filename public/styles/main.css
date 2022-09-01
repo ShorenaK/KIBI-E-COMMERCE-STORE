@@ -166,3 +166,16 @@ span {
 #delete-btn:hover {
     background-color: #fc3b3b;
 }
+.tst-1, .tst {
+    transform: translate(-20%, -1900%);
+    background-color: #32323863;
+    width: 480px;
+    border-radius: 10px;
+    text-align: center;
+}
+.tst-2 {
+    background-color: #32323863;
+    width: 480px;
+    border-radius: 10px;
+    text-align: center;
+}

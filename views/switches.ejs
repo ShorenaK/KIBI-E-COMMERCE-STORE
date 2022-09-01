@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <%- include( 'partials/head.ejs' ) %>
+        <link rel="stylesheet" href="/styles/index.css">
+    </head>
+    <nav><%- include( 'partials/nav.ejs' )  %>
+    </nav>
+    <title>Keycaps</title>
+    <body>
+<h1 class="title">Switches</h1>
+<% switches.forEach(function(switch) { %>
+    <div class="card" style="width: 18rem;">
+        <img src="<%= switch.image %>" max width="300px" max height="300px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= switch.name %></h5>
+          <p class="card-text">$<%= switch.price %></p>
+          <a href="/products/switches/<%=switch._id%>" class="btn btn-primary"><strong>View</strong></a>
+</div>
+</div>
+<% }); %>
+</body>
+<footer>
+    <%- include( 'partials/footer.ejs' ) %>
+    </footer>
