@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 4005;
+const PORT = process.env.PORT || 4005;
 require('./config/db.connection');
 const methodOverride = require('method-override');
 const productsController = require('./controllers/products_controller')
