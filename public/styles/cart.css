@@ -1,0 +1,92 @@
+body {
+    background-color: #18181b;
+    color: #efeff1;
+}
+.card img {
+    max-width: 400px;
+}
+.card {
+    overflow: hidden;
+    display: inline-block;
+    max-width: 500px;
+    display: inline-grid;
+}
+h1 {
+    font-family:'Dosis', sans-serif;
+    margin-top: 20px;
+    margin-left: 250px;
+    font-size: 50px;
+    color: #efeff1;
+}
+.navbar {
+    width: 100%;
+    box-shadow: rgba(33, 35, 38, 0.137) 0px 10px 20px -10px;
+}
+.title {
+    text-decoration: none;
+    color: #000;
+}
+.name {
+    margin-left: 0px;
+}
+.navbar-nav {
+    margin-left: 210px;
+}
+img {
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 20px;
+}
+.cart {
+    background-color: #26262b;
+}
+.inner-cart {
+    display: inline-block;
+    padding: 20px;
+}
+#cart {
+    background-color: #772ce8;
+    border-color: #772ce8;
+}
+#nv {
+    color: #efeff1;
+}
+#cart {
+    width: 140px;
+    background-color: #772ce8;
+    border-color: #772ce8;
+    float: end;
+    margin-left: 1500px;
+}
+.btn {
+    background-color: #772ce8;
+    border-color: #772ce8;
+    margin: 30px;
+    transform: translate(0%, 100%);
+}
+.btn:hover {
+    background-color: #8846ec;
+    border-color: #772ce8;
+}
+.head {
+    margin-left: 30px;
+    transform: translate(0%, 30%);
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-left: -8px;
+    transform: translate(255%, 185%);
+}
+.head {
+    transform: translate(5%, -20%);
+    margin: -25px
+}
+.foot {
+    border-top: 1px solid gray;
+    color: #efeff1;
+}
+.cart-page {
+    background-color: #26262b;
+    padding: 40px;
+}

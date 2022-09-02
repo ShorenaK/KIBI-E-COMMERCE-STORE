@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <%- include( 'partials/head.ejs' ) %>
+    <link rel="stylesheet" href="/styles/cart.css">
+</head>
+<body>
+    <nav><%- include( 'partials/nav.ejs' )  %>
+    </nav>
+    <section class="cart-page">
+    <div class="cart">
+    <div class="inner-cart">
+    <h1 class="head">Cart</h1>
+    <% cart.forEach((item) => { %>
+        <div class="cart-img">
+        <img src="<%= item.image %>"/>
+        </div>
+        <div class="info">
+        <h2 class="name"><%= item.name %></h2>
+        <h3>$<%= item.price %></h3>
+        </div>
+    </div>
+    </div>
+    <% }) %>
+    <a href="/thanks" class="btn btn-primary"><strong>Check Out</strong></a>
+</section>
+</body>
+</html>
+<footer>
+<%- include( 'partials/footer.ejs' ) %>
+</footer>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+        <div class="new">
+        <h1>Add new product</h1>
+        <form action="/products/new" method="POST">
+            <input type="radio" name="type" value="keyboard">
+            <label for="keyboard"><span>Keyboard</span></label>
+            <input type="radio" name="type" value="keycap">
+            <label for="keycap"><span>Keycap Set</span></label>
+            <input type="text" name="name" placeholder="Name" class="bar">
+            <input type="text" name="image" placeholder="Image URL" class="bar">
+            <input type="text" name="description" placeholder="Description" class="bar">
+            <input type="number" name="price" placeholder="Price" class="bar">
+            <input type="submit" id="submit-btn">
+        </form>
+    </div>
+</body>
+</html>

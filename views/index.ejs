@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <%- include( 'partials/head.ejs' ) %>
+        <link rel="stylesheet" href="/styles/index.css">
+    </head>
+    <body>
+        <title>All Products</title>
+        <nav><%- include( 'partials/nav.ejs' )  %>
+        </nav>
+        <h1 class="title">Keyboards</h1>
+        <div class="grad"></div>
+        <% keyboards.forEach(function(keyboard) { %>
+            <div class="card" style="width: 18rem;" id="key">
+                <div class="card-content">
+                <img src="<%= keyboard.image %>" max width="300px" max height="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= keyboard.name %></h5>
+                  <p class="card-text">$<%= keyboard.price %></p>
+                  <a href="/products/keyboards/<%=keyboard._id%>" class="btn btn-primary"><strong>View</strong></a>
+                </div>
+    </div>
+    </div>
+    <% }); %>
+    <div>
+        <h1 class="title">Keycaps</h1>
+        <div class="grad"></div>
+        <% keycaps.forEach(function(keycap) { %>
+            <div class="card" style="width: 18rem;" id="cap">
+                <div class="card-content">
+                <img src="<%= keycap.image %>" max width="300px" max height="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= keycap.name %></h5>
+                  <p class="card-text">$<%= keycap.price %></p>
+                  <a href="/products/keycaps/<%=keycap._id%>" class="btn btn-primary"><strong>View</strong></a>
+        </div>
+    </div>
+    </div>
+    <% }); %>
+    </body>
+    <footer>
+    <%- include( 'partials/footer.ejs' ) %>
+    </footer>
+</html>

@@ -1,0 +1,118 @@
+img {
+    max-width: 600px;
+}
+body {
+    background-color: #18181b;
+}
+h1 {
+    font-family:'Dosis', sans-serif;
+    margin-top: 20px;
+    margin-left: 250px;
+    font-size: 70px;
+    color: #efeff1;
+}
+#info h2 {
+    font-family:'Dosis', sans-serif;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-size: 30px;
+    color: #efeff1;
+}
+h3, p {
+    color: #efeff1;
+}
+.navbar {
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+}
+#new img {
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.navbar {
+    width: 100%;
+    box-shadow: rgba(33, 35, 38, 0.137) 0px 10px 20px -10px;
+    background-color: #18181b;
+}
+.title {
+    text-decoration: none;
+    color: #efeff1;
+}
+.navbar-nav {
+    margin-left: 210px;
+    color: #efeff1;
+}
+.navbar {
+    width: 100%;
+    box-shadow: rgba(33, 35, 38, 0.137) 0px 10px 20px -10px;
+    background-color: #18181b;
+    border-bottom: 1px solid gray;
+}
+.navbar .navbar-expand-lg {
+    border-bottom: none;
+}
+.nav-item {
+    margin-left: 0px;
+    background-color: #18181b;
+    color: #efeff1;
+}
+.ft {
+    position: relative;
+    border: #000;
+    font-size: 30px;
+}
+#nv {
+    color: #efeff1;
+}
+#TU {
+    background-color: #772ce8;
+    height: 60px;
+    width: 180px;
+}
+#cart {
+    background-color: #772ce8;
+}
+.head {
+    display: inline-block;
+}
+.product {
+    margin: 30px;
+}
+img {
+    margin: 30px; 
+    padding: 10px;
+    border-radius: 30px;
+}
+#info {
+    margin: 20px;
+}
+input {
+    background-color: #772ce8;
+    border-color: #772ce8;
+    color:#efeff1;
+    border-radius: 10px;
+    width: 260px;
+    height: 60px;
+    font-weight: bold;
+}
+.head {
+    margin-top: -50px; 
+    transform: translate(24%, 0%);
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    transform: translate(255%, 165%);
+}
+.head {
+    margin-top: -50px; 
+    transform: translate(24%, 0%);
+}
+input:hover {
+    background-color: #8846ec;
+    border-color: #772ce8;
+}

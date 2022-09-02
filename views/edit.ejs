@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+        <h1 id="edit-h1">Edit products</h1>
+        <% if (updatedItem !== null && updatedItem !== undefined) {%> 
+          <p>Item updated successfully: <%= updatedItem.name %> </p>
+        <% } %> 
+        <h2>Keycaps</h2>
+        <% keycaps.forEach((keycap) => { %>
+            <form action="/products/keycaps/<%= keycap._id %>/edit?_method=PUT" method="POST">
+                <input type="text" name="name" value="<%= keycap.name %>" class="bar"></input>
+                <input type="text" name="image" value="<%= keycap.image %>" class="bar"></input>
+                <input type="text" name="description" value="<%= keycap.description %>" class="bar"></input>
+                <input type="number" name="price" value="<%= keycap.price %>" class="bar"></input>
+                <input type="submit"id="submit-btn"></input>
+            </form>
+            <form action="/products/keycaps/<%= keycap._id %>/edit?_method=DELETE" method="POST">
+                <input type="submit" value="Delete" id="delete-btn"></input>
+            </form>
+        <% }) %>
+        <h2>Keyboards</h2>
+        <% keyboards.forEach((keyboard) => { %> 
+            <form action="/products/keyboards/<%= keyboard._id %>/edit?_method=PUT" method="POST">
+                <input type="text" name="name" value="<%= keyboard.name %>" class="bar"></input>
+                <input type="text" name="image" value="<%= keyboard.image %>" class="bar"></input>
+                <input type="text" name="description" value="<%= keyboard.description %>" class="bar"></input>
+                <input type="number" name="price" value="<%= keyboard.price %>" class="bar"></input>
+                <input type="submit" id="submit-btn"></input>
+            </form>
+            <form action="/products/keyboards/<%= keyboard._id %>/edit?_method=DELETE" method="POST">
+                <input type="submit" value="Delete" id="delete-btn"></input>
+            </form>
+        <% }) %>
+    </body>
+</html>

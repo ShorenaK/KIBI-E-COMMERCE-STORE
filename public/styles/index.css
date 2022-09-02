@@ -1,0 +1,92 @@
+body {
+    background-color: #18181b;
+    color: #efeff1;
+}
+.card img {
+    max-width: 400px;
+}
+.card {
+    overflow: none;
+    display: inline-block;
+    display: inline-grid;
+}
+h1 {
+    font-family:'Dosis', sans-serif;
+    margin-top: 20px;
+    margin-left: 250px;
+    font-size: 10px;
+    color: #efeff1;
+}
+.navbar {
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+}
+#new img {
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.navbar {
+    width: 100%;
+}
+.navbar {
+    width: 100%;
+    box-shadow: rgba(33, 35, 38, 0.137) 0px 10px 20px -10px;
+    background-color: #18181b;
+    border-bottom: 1px solid gray;
+}
+.navbar .navbar-expand-lg {
+    border-bottom: none;
+}
+.title {
+    text-decoration: none;
+    color: #000;
+}
+.navbar-nav {
+    margin-left: 210px;
+}
+.nav-item {
+    margin-left: 0px;
+}
+#nv {
+    color: #efeff1;
+}
+.title {
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+}
+.card-title, .card-text {
+    color: #efeff1;
+}
+#key {
+    min-height: 400px;
+}
+.card {
+    background-color: #3a3a41;
+    margin: 10px;
+    min-height: 500px;
+}
+.card:hover {
+    background-color: #494952;
+    box-shadow: rgba(0, 0, 0, 0.562) 0px 22px 70px 4px;
+}
+.btn {
+    background-color: #772ce8;
+    border-color: #772ce8;
+}
+.btn:hover {
+    background-color: #8846ec;
+    border-color: #772ce8;
+}
+.grad {
+    margin-top: -43px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    height: 5px;
+    width: 98%;
+    background-image: linear-gradient(to right, #fcb9ba, #ba92ff, #97b4ff, #90afff, #887cfa, #b37cfa);
+}
