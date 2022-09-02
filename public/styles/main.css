@@ -50,9 +50,12 @@ h2 {
 .navbar .navbar-expand-lg {
     border-bottom: none;
 }
-.title {
+.title, .title-btn {
     text-decoration: none;
     color: #efeff1;
+}
+.title-btn:hover {
+    color:#3f177a;
 }
 .navbar-nav {
     margin-left: 210px;
@@ -62,6 +65,7 @@ h2 {
     margin-left: 0px;
     background-color: #18181b;
     color: #efeff1;
+    font-size: 20px;
 }
 .ft {
     position: relative;
@@ -76,6 +80,7 @@ h2 {
 }
 #TU {
     background-color: #772ce8;
+    border-color:#772ce8;
     height: 60px;
     width: 180px;
     border-radius: 10px;
@@ -87,7 +92,7 @@ h2 {
     background-color: #8f52eb;
 }
 #cart {
-    width: 130px;
+    width: 140px;
     background-color: #772ce8;
     border-color: #772ce8;
     float: end;
@@ -100,25 +105,38 @@ h2 {
 .foot {
     border-top: 1px solid gray;
     color: #efeff1;
+    padding: 10px;
+}
+footer {
+    height: 10rem;
 }
 #ty {
     margin-left: 165px;
-    margin-top: 30px;
+    margin-top: 20px;
+    color: #f5b7f8;
 }
 .ty-kc {
     width: 400px;
     height: 400px;
-    margin: 50px;
+    margin: 22px;
     border-radius: 15px;
     margin-left: 100px;
 }
 .ty-card {
     transform: translate(100%, 5%);
-    width: 650px;
+    width: 600px;
     height: 600px;
-    background-color: #323238;
+    background-color: #18181b;
     border-radius: 15px;
     padding: 20px;
+    border-width: 20px;
+    border-style: solid;
+    border-image: linear-gradient(to top, #facccd, #fac0ea, #ebadff, #be99ff, #b5a6ff, #a5bfff) 1;
+    border-radius: 15px;
+    transform: translate(110%, 5%);
+}
+.ty-content {
+    transform: translate(-6%, 0);
 }
 .head {
     margin-top: -50px; 
@@ -166,16 +184,98 @@ span {
 #delete-btn:hover {
     background-color: #fc3b3b;
 }
-.tst-1, .tst {
-    transform: translate(-20%, -1900%);
+#t {
     background-color: #32323863;
-    width: 480px;
+    width: 750px;
+    height: 80px;
     border-radius: 10px;
     text-align: center;
+    z-index: 500;
+    position: absolute;
+    float: left;
+    top: 120px;
+    margin-left: 200px;
+    margin-top: 50px;
 }
-.tst-2 {
+#t h2 {
+    margin-left: -10px;
+    font-size: 50px;
+    transform: translate(0, -16%);
+}
+#t2 {
     background-color: #32323863;
-    width: 480px;
+    width: 500px;
+    height: 80px;
     border-radius: 10px;
     text-align: center;
+    z-index: 500;
+    position: absolute;
+    float: left;
+    top: 120px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+#t2 h2 {
+    margin-left: -10px;
+    font-size: 50px;
+    transform: translate(0, -16%);
+}
+.pic {
+    position: relative;
+}
+.BN {
+    background-color: #772ce8;
+    border-color:#772ce8;
+    height: 60px;
+    width: 180px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 21px;
+    color:#e4e4f1;
+    padding-top: 12px;
+}
+.BN:hover {
+    background-color: #8f52eb;
+    border-color: #8f52eb;
+}
+.BN span {
+    margin-top: 40px;
+    text-decoration: none;
+}
+.BN span:hover {
+    color:#3f177a;
+}
+a {
+    text-decoration: none;
+}
+.row {
+    max-width: 1915px;
+}
+footer a {
+    color:#8f52eb;
+    font-size: 16px;
+    font-weight: bold;
+}
+footer a:hover {
+    color:#a572f3;
+}
+#cart:hover {
+    background-color:#8f52eb;
+}
+.nf {
+    height: 28rem;
+}
+.nf h2 {
+    margin-left: 60px;
+}
+.nf img {
+    width: 490px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+.navbar-toggler {
+    background-color: white;
 }

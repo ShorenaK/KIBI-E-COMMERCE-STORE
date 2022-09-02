@@ -26,6 +26,9 @@ h1 {
     text-decoration: none;
     color: #000;
 }
+.name {
+    margin-left: 0px;
+}
 .navbar-nav {
     margin-left: 210px;
 }
@@ -39,9 +42,7 @@ img {
 }
 .inner-cart {
     display: inline-block;
-}
-.info {
-    display: inline;
+    padding: 20px;
 }
 #cart {
     background-color: #772ce8;
@@ -51,11 +52,10 @@ img {
     color: #efeff1;
 }
 #cart {
-    width: 130px;
+    width: 140px;
     background-color: #772ce8;
     border-color: #772ce8;
     float: end;
-    margin-top: -90px;
     margin-left: 1500px;
 }
 .btn {

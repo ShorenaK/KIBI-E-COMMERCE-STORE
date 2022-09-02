@@ -70,6 +70,10 @@ h1 {
     margin: 10px;
     min-height: 500px;
 }
+.card:hover {
+    background-color: #494952;
+    box-shadow: rgba(0, 0, 0, 0.562) 0px 22px 70px 4px;
+}
 .btn {
     background-color: #772ce8;
     border-color: #772ce8;
@@ -77,4 +81,12 @@ h1 {
 .btn:hover {
     background-color: #8846ec;
     border-color: #772ce8;
+}
+.grad {
+    margin-top: -43px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    height: 5px;
+    width: 98%;
+    background-image: linear-gradient(to right, #fcb9ba, #ba92ff, #97b4ff, #90afff, #887cfa, #b37cfa);
 }
