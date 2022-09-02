@@ -105,6 +105,10 @@ h2 {
 .foot {
     border-top: 1px solid gray;
     color: #efeff1;
+    padding: 10px;
+}
+footer {
+    height: 10rem;
 }
 #ty {
     margin-left: 165px;
@@ -248,4 +252,12 @@ a {
 }
 .row {
     max-width: 1915px;
+}
+footer a {
+    color:#8f52eb;
+    font-size: 16px;
+    font-weight: bold;
+}
+footer a:hover {
+    color:#a572f3;
 }
