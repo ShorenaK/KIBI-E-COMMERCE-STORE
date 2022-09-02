@@ -235,3 +235,6 @@ span {
 a {
     text-decoration: none;
 }
+.row {
+    max-width: 1915px;
+}
