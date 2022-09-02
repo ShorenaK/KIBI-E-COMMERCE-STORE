@@ -49,7 +49,7 @@ The application was built with Node.js, Mongoose, Express and EJS. The file stru
 
 
 ## Link to hosted application:
-To see the application, click (link).
+To see the application, click https://kibi-e-commerce.herokuapp.com/.
 
 
 
