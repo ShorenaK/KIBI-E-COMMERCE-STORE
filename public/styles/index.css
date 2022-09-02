@@ -70,6 +70,9 @@ h1 {
     margin: 10px;
     min-height: 500px;
 }
+.card:hover {
+    background-color: #494952;
+}
 .btn {
     background-color: #772ce8;
     border-color: #772ce8;
