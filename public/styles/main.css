@@ -108,22 +108,31 @@ h2 {
 }
 #ty {
     margin-left: 165px;
-    margin-top: 30px;
+    margin-top: 20px;
+    color: #f5b7f8;
 }
 .ty-kc {
     width: 400px;
     height: 400px;
-    margin: 50px;
+    margin: 22px;
     border-radius: 15px;
     margin-left: 100px;
 }
 .ty-card {
     transform: translate(100%, 5%);
-    width: 650px;
+    width: 600px;
     height: 600px;
-    background-color: #323238;
+    background-color: #18181b;
     border-radius: 15px;
     padding: 20px;
+    border-width: 20px;
+    border-style: solid;
+    border-image: linear-gradient(to top, #facccd, #fac0ea, #ebadff, #be99ff, #b5a6ff, #a5bfff) 1;
+    border-radius: 15px;
+    transform: translate(110%, 5%);
+}
+.ty-content {
+    transform: translate(-6%, 0);
 }
 .head {
     margin-top: -50px; 
