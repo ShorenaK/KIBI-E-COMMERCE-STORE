@@ -76,6 +76,7 @@ h2 {
 }
 #TU {
     background-color: #772ce8;
+    border-color:#772ce8;
     height: 60px;
     width: 180px;
     border-radius: 10px;
@@ -166,16 +167,47 @@ span {
 #delete-btn:hover {
     background-color: #fc3b3b;
 }
-.tst-1, .tst {
-    transform: translate(-20%, -1900%);
+#t {
     background-color: #32323863;
-    width: 480px;
+    width: 750px;
+    height: 80px;
     border-radius: 10px;
     text-align: center;
+    z-index: 500;
+    position: absolute;
+    float: left;
+    top: 120px;
+    margin-left: 200px;
+    margin-top: 50px;
 }
-.tst-2 {
-    background-color: #32323863;
-    width: 480px;
+#t h2 {
+    margin-left: -10px;
+    font-size: 50px;
+}
+.pic {
+    position: relative;
+}
+.BN {
+    background-color: #772ce8;
+    border-color:#772ce8;
+    height: 60px;
+    width: 180px;
     border-radius: 10px;
-    text-align: center;
+    float: left;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 21px;
+    color:#e4e4f1;
+    padding-top: 12px;
+}
+.BN:hover {
+    background-color: #8f52eb;
+    border-color: #8f52eb;
+}
+.BN span {
+    margin-top: 40px;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
 }
