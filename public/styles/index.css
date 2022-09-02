@@ -72,6 +72,7 @@ h1 {
 }
 .card:hover {
     background-color: #494952;
+    box-shadow: rgba(0, 0, 0, 0.562) 0px 22px 70px 4px;
 }
 .btn {
     background-color: #772ce8;
