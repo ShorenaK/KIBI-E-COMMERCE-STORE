@@ -1,9 +1,9 @@
-![](http://imgur.com/t3teAxi.png)
+![](public/images/KB.png)
 ### :handbag: A simple RESTful Web App to purchase Keyboards and Keycaps on e-commerce store.
 
 ## Introduction:
 
-"KIBI" store is a full stack web application that features the 7 RESTful routes. The idea to build an awesome e-commerce store to offer various quality keyboards was born based on common hobbies of team members.
+"KIBI" store is a full stack, e-commerce, web application that features the 7 RESTful routes. The idea to build an awesome e-commerce store to offer various quality keyboards was born based on common hobbies of team members.
 
 
 ## Credits:
@@ -49,7 +49,7 @@ The application was built with Node.js, Mongoose, Express and EJS. The file stru
 
 
 ## Link to hosted application:
-To see the application, click (link).
+To see the application, click https://kibi-e-commerce.herokuapp.com/.
 
 
 
