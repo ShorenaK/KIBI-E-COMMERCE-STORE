@@ -196,6 +196,7 @@ span {
 #t h2 {
     margin-left: -10px;
     font-size: 50px;
+    transform: translate(0, -16%);
 }
 #t2 {
     background-color: #32323863;
@@ -213,6 +214,7 @@ span {
 #t2 h2 {
     margin-left: -10px;
     font-size: 50px;
+    transform: translate(0, -16%);
 }
 .pic {
     position: relative;
