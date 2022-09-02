@@ -10,6 +10,7 @@
         <nav><%- include( 'partials/nav.ejs' )  %>
         </nav>
         <h1 class="title">Keyboards</h1>
+        <div class="grad"></div>
         <% keyboards.forEach(function(keyboard) { %>
             <div class="card" style="width: 18rem;" id="key">
                 <div class="card-content">
@@ -24,6 +25,7 @@
     <% }); %>
     <div>
         <h1 class="title">Keycaps</h1>
+        <div class="grad"></div>
         <% keycaps.forEach(function(keycap) { %>
             <div class="card" style="width: 18rem;" id="cap">
                 <div class="card-content">
