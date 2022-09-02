@@ -50,9 +50,12 @@ h2 {
 .navbar .navbar-expand-lg {
     border-bottom: none;
 }
-.title {
+.title, .title-btn {
     text-decoration: none;
     color: #efeff1;
+}
+.title-btn:hover {
+    color:#3f177a;
 }
 .navbar-nav {
     margin-left: 210px;
@@ -62,6 +65,7 @@ h2 {
     margin-left: 0px;
     background-color: #18181b;
     color: #efeff1;
+    font-size: 20px;
 }
 .ft {
     position: relative;
@@ -184,6 +188,23 @@ span {
     margin-left: -10px;
     font-size: 50px;
 }
+#t2 {
+    background-color: #32323863;
+    width: 500px;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 500;
+    position: absolute;
+    float: left;
+    top: 120px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+#t2 h2 {
+    margin-left: -10px;
+    font-size: 50px;
+}
 .pic {
     position: relative;
 }
@@ -207,6 +228,9 @@ span {
 .BN span {
     margin-top: 40px;
     text-decoration: none;
+}
+.BN span:hover {
+    color:#3f177a;
 }
 a {
     text-decoration: none;
