@@ -43,6 +43,10 @@ The application was built with Node.js, Mongoose, Express and EJS. The file stru
 ![](public/images/Home.png)
 ![](public/images/Home-2.png)
 
+## Thank You Page:
+![](public/images/Thanks.png)
+
+
 
 ## Link to hosted application:
 To see the application, click (link).
