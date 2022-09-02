@@ -52,11 +52,10 @@ img {
     color: #efeff1;
 }
 #cart {
-    width: 130px;
+    width: 140px;
     background-color: #772ce8;
     border-color: #772ce8;
     float: end;
-    margin-top: -90px;
     margin-left: 1500px;
 }
 .btn {

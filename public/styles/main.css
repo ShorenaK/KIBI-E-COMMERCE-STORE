@@ -92,7 +92,7 @@ h2 {
     background-color: #8f52eb;
 }
 #cart {
-    width: 130px;
+    width: 140px;
     background-color: #772ce8;
     border-color: #772ce8;
     float: end;
@@ -260,4 +260,19 @@ footer a {
 }
 footer a:hover {
     color:#a572f3;
+}
+#cart:hover {
+    background-color:#8f52eb;
+}
+.nf {
+    height: 28rem;
+}
+.nf h2 {
+    margin-left: 60px;
+}
+.nf img {
+    width: 490px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
 }
