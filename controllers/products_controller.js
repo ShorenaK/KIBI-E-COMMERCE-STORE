@@ -4,11 +4,9 @@ const mongoose = require('mongoose');
 const url = require('url');
 router.use(express.json());
 router.use(express.urlencoded({ extended: true}));
-// const seedProduct = require('../models/seed_products');
 const Product = require('../models/Product');
 const Keycap = require('../models/Keycap');
 const Switch = require('../models/Switch');
-// const seedSwitches = require('../models/seed_switches')
 
 // STRETCH: replace this with a database model and make it session-specific (one per site visitor instead of shared)
 let cart = [];
@@ -177,7 +175,6 @@ router.get('/edit', async (req,res) => {
   const keycaps = await Keycap.find({});
   const keyboards = await Product.find({});
   const switches = await Switch.find({});
-  console.log(req.query);
   let updatedItem;
   if (req.query.type === "keycap") {
     updatedItem = await Keycap.findById(req.query.id);
@@ -188,7 +185,6 @@ router.get('/edit', async (req,res) => {
   if (req.query.type === "keyswitch") {
     updatedItem = await Switch.findById(req.query.id);
   }
-  console.log(updatedItem)
   res.render('edit.ejs', {keycaps: keycaps, keyboards: keyboards, switches: switches, updatedItem: updatedItem});
 });
 
