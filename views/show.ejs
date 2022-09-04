@@ -7,7 +7,7 @@
     <body> 
         <nav><%- include( 'partials/nav.ejs' )  %>
         </nav>
-    <% if (keycap === undefined) { %>
+    <% if (keycap === undefined && keyswitch === undefined) { %>
         <title><%=keyboard.name%></title>
         <section class="container product">
             <div class="row">
@@ -23,7 +23,7 @@
         </div>
     </section>
 <% } %> 
-<% if (keyboard === undefined) { %>
+<% if (keyboard === undefined && keyswitch === undefined) { %>
     <section class="container product">
         <div class="row">
             <div class="col-lg-5 col-md-12 col-12">
@@ -34,6 +34,21 @@
             <h3>$<%=keycap.price%></h3>
             <p><%=keycap.description%><p>
             <form action="/products/keycaps/<%= keycap._id %>" method="POST"><input type="submit" value="Add To Cart"></form>
+        </div>
+    </div>
+</section>
+<% } %>
+<% if (keyboard === undefined && keycap === undefined) { %>
+    <section class="container product">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-12">
+            <img class="img-fluid w-100"src="<%= keyswitch.image %>">
+            </div>
+            <div class="col-lg-6 col-md-12 col-12" id="info">
+            <h2><%=keyswitch.name%></h2>
+            <h3>$<%=keyswitch.price%></h3>
+            <p><%=keyswitch.description%><p>
+            <form action="/products/switches/<%= keyswitch._id %>" method="POST"><input type="submit" value="Add To Cart"></form>
         </div>
     </div>
 </section>
