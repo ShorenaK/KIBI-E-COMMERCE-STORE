@@ -34,6 +34,8 @@ The application was built with Node.js, Mongoose, Express and EJS. The file stru
 
 
 
+## Resources: 
+
 
 
 ## Future Improvements:

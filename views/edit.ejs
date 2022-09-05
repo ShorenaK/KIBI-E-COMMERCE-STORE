@@ -40,5 +40,18 @@
                 <input type="submit" value="Delete" id="delete-btn"></input>
             </form>
         <% }) %>
+        <h2>Switches</h2>
+        <% switches.forEach((keyswitch) => { %>
+            <form action="/products/switches/<%= keyswitch._id %>/edit?_method=PUT" method="POST">
+                <input type="text" name="name" value="<%= keyswitch.name %>" class="bar"></input>
+                <input type="text" name="image" value="<%= keyswitch.image %>" class="bar"></input>
+                <input type="text" name="description" value="<%= keyswitch.description %>" class="bar"></input>
+                <input type="number" name="price" value="<%= keyswitch.price %>" class="bar"></input>
+                <input type="submit" id="submit-btn"></input>
+            </form>
+            <form action="/products/switches/<%= keyswitch._id %>/edit?_method=DELETE" method="POST">
+                <input type="submit" value="Delete" id="delete-btn"></input>
+            </form>
+        <% }) %>
     </body>
 </html>
