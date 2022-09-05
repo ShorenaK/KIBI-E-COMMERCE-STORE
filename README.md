@@ -27,14 +27,16 @@ The application was built with Node.js, Mongoose, Express and EJS. The file stru
 
 
 ## Challenges:
-
+- Passing more than one query paramater was challenging. We had to research methods for encoding multiple queries in the URL for parsing by a separate controller.
 
 
 ## Highlights:
+- Adding a switches index confounded us for a few minutes, because the EJS compiler was reading "switch" as a command rather than a variable. Once we realized this and changed the variable name, the program ran as expected.
 
-
-
-
+## Resources:
+- Google
+- Stack Overflow
+- Express documentation
 
 ## Future Improvements:
  This application may be developed further with additions such as functionality to accept payments securely. Another improvement would be to create a community of frequent customers who would log into the app. They could have increased functionality over non-logged in users. (For example, making listing an item a function that only logged-in users can do.) Users could then benefit from coupons, or other such perks.
@@ -50,6 +52,3 @@ The application was built with Node.js, Mongoose, Express and EJS. The file stru
 
 ## Link to hosted application:
 To see the application, click https://kibi-e-commerce.herokuapp.com/.
-
-
-
