@@ -12,7 +12,7 @@
     <body>
         <h1 id="edit-h1">Edit products</h1>
         <% if (updatedItem !== null && updatedItem !== undefined) {%> 
-          <p>Item updated successfully: <%= updatedItem.name %> </p>
+          <p>Item updated successfully: <strong><%= updatedItem.name %></strong> </p>
         <% } %> 
         <h2>Keycaps</h2>
         <% keycaps.forEach((keycap) => { %>

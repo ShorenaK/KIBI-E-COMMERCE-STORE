@@ -292,3 +292,7 @@ footer a:hover {
     width: 96%;
     transform: translate(4%,0%);
 }
+p {
+    color: #e4e4f1;
+    font-size: 20px;
+}
