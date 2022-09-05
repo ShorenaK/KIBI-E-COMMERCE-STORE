@@ -27,13 +27,11 @@ The application was built with Node.js, Mongoose, Express and EJS. The file stru
 
 
 ## Challenges:
-
+- Passing more than one query paramater was challenging. We had to research methods for encoding multiple queries in the URL for parsing by a separate controller.
 
 
 ## Highlights:
-
-
-
+- Adding a switches index confounded us for a few minutes, because the EJS compiler was reading "switch" as a command rather than a variable. Once we realized this and changed the variable name, the program ran as expected.
 
 
 ## Future Improvements:
