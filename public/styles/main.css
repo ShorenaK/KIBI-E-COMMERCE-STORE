@@ -299,3 +299,11 @@ p {
 #TU:hover {
     transform: translateY(-3px);
 }
+.fa-solid {
+    font-size: 175%;
+    color:#772ce8;
+    z-index: 555;
+    position: absolute;
+    margin-top: 78px;
+    margin-left: 10px;
+}

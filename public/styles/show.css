@@ -119,3 +119,13 @@ input:hover {
 .show {
     margin-top: -65px;
 }
+
+.fa-solid {
+    font-size: 175%;
+    color:#772ce8;
+    z-index: 555;
+    position: absolute;
+    margin-top: 98px;
+    margin-left: 10px;
+    transform: translate(20%, 250%);
+}
