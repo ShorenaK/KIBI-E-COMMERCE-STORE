@@ -92,3 +92,16 @@ img {
     background-color: #26262b;
     padding: 40px;
 }
+#CO {
+    margin-left: -20px;
+    margin-top: 70px;
+}
+.fa-solid {
+    font-size: 175%;
+    color:#772ce8;
+    z-index: 555;
+    position: absolute;
+    margin-top: 98px;
+    margin-left: 10px;
+    transform: translate(-75%, 90%);
+}
