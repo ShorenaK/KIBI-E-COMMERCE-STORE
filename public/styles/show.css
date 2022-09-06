@@ -11,6 +11,11 @@ h1 {
     font-size: 70px;
     color: #efeff1;
 }
+#lg {
+    width: 80px;
+    height: 80px;
+    transform: translate(180%, 165%);
+}
 #info h2 {
     font-family:'Dosis', sans-serif;
     margin-top: 20px;
@@ -103,11 +108,6 @@ input {
     margin-top: -50px; 
     transform: translate(24%, 0%);
 }
-.logo {
-    width: 70px;
-    height: 70px;
-    transform: translate(255%, 165%);
-}
 .head {
     margin-top: -50px; 
     transform: translate(24%, 0%);
@@ -115,4 +115,7 @@ input {
 input:hover {
     background-color: #8846ec;
     border-color: #772ce8;
+}
+.show {
+    margin-top: -65px;
 }
